@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-08-16T10:45:30.406Z",
+  "updatedAt": "2026-08-16T10:55:30.164Z",
   "today": "2026-08-16",
   "range7": "2026-08-10 ~ 2026-08-16",
   "range30": "2026-07-18 ~ 2026-08-16",
   "platforms": {
     "today": {
       "total": {
-        "amount": 7545.8,
-        "count": 132
+        "amount": 7615.7,
+        "count": 133
       },
       "byPlatform": {
         "douyin": {
-          "amount": 7486.9,
-          "count": 131
+          "amount": 7556.8,
+          "count": 132
         },
         "pinduoduo": {
           "amount": 58.9,
@@ -27,13 +27,13 @@
     },
     "d7": {
       "total": {
-        "amount": 73874.37,
-        "count": 1548
+        "amount": 73944.27,
+        "count": 1549
       },
       "byPlatform": {
         "douyin": {
-          "amount": 63289.34,
-          "count": 1213
+          "amount": 63359.24,
+          "count": 1214
         },
         "pinduoduo": {
           "amount": 10585.03,
@@ -47,13 +47,13 @@
     },
     "d30": {
       "total": {
-        "amount": 328132.93,
-        "count": 6723
+        "amount": 328202.83,
+        "count": 6724
       },
       "byPlatform": {
         "douyin": {
-          "amount": 277198.31,
-          "count": 5123
+          "amount": 277268.21,
+          "count": 5124
         },
         "pinduoduo": {
           "amount": 50934.62,
@@ -71,8 +71,8 @@
       "name": "My",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 5210.5,
-      "count": 95
+      "amount": 5280.4,
+      "count": 96
     },
     {
       "name": "琪宝衣帽室",
@@ -273,7 +273,7 @@
     },
     {
       "date": "2026-08-16",
-      "amount": 7545.8,
+      "amount": 7615.7,
       "estimateAmount": 0,
       "isEstimate": false
     }
