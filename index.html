@@ -8,56 +8,69 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>聚售台 · 销售看板</title>
+<title>琪琪的专属 · 销售看板</title>
 <style>
-  :root{ --bg:#f5f6f8; --card:#ffffff; --red:#e4393c; --green:#07a35a; --text:#1f2329; --sub:#8a9099; --line:#eef0f3; --blue:#3b6ef5; }
+  :root{ --bg:#fff5f7; --card:#ffffff; --pink:#ff6b9d; --pink2:#ff8fab; --pink3:#ffc2d1; --pink-light:#fff0f3; --text:#5c3a44; --sub:#b08c99; --line:#ffe6ec; --green:#ff85a1; --shadow:0 8px 24px rgba(255,107,157,.12); }
   *{ box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
-  body{ margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; padding:env(safe-area-inset-top) 12px calc(20px + env(safe-area-inset-bottom)); overflow-x:hidden; }
-  .top{ display:flex; align-items:center; justify-content:space-between; padding:16px 4px 10px; }
-  .top h1{ font-size:19px; margin:0; font-weight:700; }
-  .dot{ width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;margin-right:6px;vertical-align:middle; }
-  .dot.off{ background:#c9ccd1; }
+  body{ margin:0; background:linear-gradient(180deg,#fff8fa 0%,#fff0f3 100%); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; padding:env(safe-area-inset-top) 14px calc(24px + env(safe-area-inset-bottom)); overflow-x:hidden; min-height:100vh; }
+  .header{ display:flex; align-items:center; gap:12px; padding:18px 4px 14px; }
+  .logo{ width:54px;height:54px;border-radius:18px;object-fit:cover;background:#fff;box-shadow:0 4px 16px rgba(255,107,157,.22); border:2px solid #fff; flex:none; }
+  .brand{ flex:1; min-width:0; }
+  .brand h1{ font-size:22px; margin:0; font-weight:800; background:linear-gradient(135deg,#ff4081,#ff6b9d); -webkit-background-clip:text; color:transparent; letter-spacing:.5px; }
+  .brand .tag{ font-size:12px; color:var(--sub); margin-top:3px; font-weight:600; }
+  .dot{ width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;margin-right:6px;vertical-align:middle; box-shadow:0 0 0 3px rgba(255,133,161,.28); }
+  .dot.off{ background:#e2d5d9; box-shadow:none; }
   .sub{ font-size:12px;color:var(--sub); }
-  .refresh{ border:none; background:var(--blue); color:#fff; font-size:13px; font-weight:600; padding:8px 14px; border-radius:10px; }
-  .refresh:active{ opacity:.8; }
-  .cards{ display:grid; grid-template-columns:1fr; gap:12px; }
-  .card{ background:var(--card); border-radius:16px; padding:16px; box-shadow:0 2px 10px rgba(0,0,0,.04); }
-  .card .title{ font-size:13px;color:var(--sub);margin-bottom:10px; }
+  .refresh{ border:none; background:linear-gradient(135deg,#ff6b9d,#ff8fab); color:#fff; font-size:13px; font-weight:700; padding:8px 16px; border-radius:50px; box-shadow:0 4px 14px rgba(255,107,157,.35); flex:none; }
+  .refresh:active{ transform:scale(.96); opacity:.9; }
+  .cards{ display:grid; grid-template-columns:1fr; gap:14px; }
+  .card{ background:var(--card); border-radius:22px; padding:18px; box-shadow:var(--shadow); position:relative; overflow:hidden; }
+  .card::before{ content:''; position:absolute; top:0; left:0; right:0; height:4px; background:linear-gradient(90deg,#ff6b9d,#ff8fab,#ffc2d1); }
+  .card .title{ font-size:13px;color:var(--sub);margin-bottom:12px; display:flex; align-items:center; gap:6px; font-weight:700; }
+  .card .title::before{ content:'🎀'; font-size:12px; }
   .big{ display:flex; align-items:baseline; gap:8px; }
-  .big .num{ font-size:30px; font-weight:800; color:var(--red); letter-spacing:-0.5px; }
-  .big .unit{ font-size:14px;color:var(--sub); }
-  .cnt{ font-size:13px;color:var(--sub);margin-top:6px; }
-  .split{ display:flex; gap:10px; margin-top:12px; }
-  .split > div{ flex:1; background:var(--bg); border-radius:10px; padding:10px; }
+  .big .num{ font-size:32px; font-weight:800; background:linear-gradient(135deg,#ff4081,#ff6b9d); -webkit-background-clip:text; color:transparent; letter-spacing:-1px; }
+  .big .unit{ font-size:13px;color:var(--sub); font-weight:600; }
+  .cnt{ font-size:13px;color:var(--sub);margin-top:6px; font-weight:600; }
+  .split{ display:flex; gap:10px; margin-top:14px; }
+  .split > div{ flex:1; background:var(--pink-light); border-radius:14px; padding:12px; }
   .split .p{ font-size:12px;color:var(--sub); }
-  .split .v{ font-size:16px;font-weight:700;margin-top:2px; }
-  .section-t{ font-size:15px;font-weight:700;margin:18px 4px 8px; }
-  .store{ background:var(--card); border-radius:12px; padding:12px; margin-bottom:8px; box-shadow:0 1px 6px rgba(0,0,0,.03); display:flex; align-items:center; gap:10px; }
-  .store .badge{ font-size:11px; font-weight:700; color:#fff; border-radius:7px; padding:3px 7px; flex:none; }
-  .badge.douyin{ background:#2b2b3a; } .badge.pinduoduo{ background:#e23a3a; } .badge.taobao{ background:#ff5000; } .badge.other{ background:#8a9099; }
-  .store .name{ flex:1; font-size:14px; font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .split .v{ font-size:15px;font-weight:800;margin-top:2px; color:var(--pink); }
+  .section-t{ font-size:15px;font-weight:800;margin:22px 4px 10px; color:var(--text); display:flex; align-items:center; gap:6px; }
+  .section-t::before{ content:'💖'; font-size:13px; }
+  .store{ background:var(--card); border-radius:16px; padding:14px; margin-bottom:10px; box-shadow:0 2px 12px rgba(255,107,157,.08); display:flex; align-items:center; gap:12px; }
+  .store .badge{ font-size:11px; font-weight:800; color:#fff; border-radius:50px; padding:4px 10px; flex:none; box-shadow:0 2px 8px rgba(0,0,0,.08); }
+  .badge.douyin{ background:linear-gradient(135deg,#ff6b9d,#ff4081); }
+  .badge.pinduoduo{ background:linear-gradient(135deg,#ff85a1,#ffb3c6); }
+  .badge.taobao{ background:linear-gradient(135deg,#ff9eb5,#ffc2d1); color:#8b4557; }
+  .badge.other{ background:#d1bfc4; }
+  .store .name{ flex:1; font-size:14px; font-weight:700; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:var(--text); }
   .store .val{ text-align:right; }
-  .store .amt{ font-size:15px; font-weight:800; color:var(--red); }
+  .store .amt{ font-size:15px; font-weight:800; background:linear-gradient(135deg,#ff4081,#ff6b9d); -webkit-background-clip:text; color:transparent; }
   .store .cnt{ font-size:11px; color:var(--sub); }
   .trend{ display:flex; align-items:flex-end; gap:4px; height:120px; overflow-x:auto; padding-top:8px; }
   .tcol{ flex:1; min-width:18px; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:100%; }
-  .tbar{ width:70%; max-width:34px; background:linear-gradient(180deg,#5b8bff,#3b6ef5); border-radius:6px 6px 0 0; min-height:2px; }
+  .tbar{ width:70%; max-width:34px; background:linear-gradient(180deg,#ff85a1,#ff6b9d); border-radius:6px 6px 0 0; min-height:2px; }
   .tdate{ font-size:9px; color:var(--sub); margin-top:5px; white-space:nowrap; }
   .trend-svg{ width:100%; height:auto; display:block; touch-action:pan-y; }
   .t-wrap{ position:relative; }
-  .t-tip{ position:absolute; transform:translate(-50%,-118%); background:#ff7a18; color:#fff; font-size:11px; font-weight:700; padding:4px 9px; border-radius:9px; white-space:nowrap; pointer-events:none; display:none; box-shadow:0 3px 10px rgba(255,122,24,.35); z-index:2; }
-  .t-tip::after{ content:''; position:absolute; left:50%; bottom:-5px; transform:translateX(-50%); border:5px solid transparent; border-top-color:#ff7a18; }
-  .empty{ text-align:center; color:var(--sub); padding:30px; font-size:14px; }
-  .err{ color:var(--red); padding:20px; text-align:center; }
-  .refreshing{ opacity:.55; }
+  .t-tip{ position:absolute; transform:translate(-50%,-118%); background:linear-gradient(135deg,#ff6b9d,#ff4081); color:#fff; font-size:11px; font-weight:700; padding:4px 10px; border-radius:50px; white-space:nowrap; pointer-events:none; display:none; box-shadow:0 4px 14px rgba(255,64,129,.35); z-index:2; }
+  .t-tip::after{ content:''; position:absolute; left:50%; bottom:-5px; transform:translateX(-50%); border:5px solid transparent; border-top-color:#ff4081; }
+  .empty{ text-align:center; color:var(--sub); padding:34px; font-size:14px; }
+  .err{ color:#ff4081; padding:20px; text-align:center; font-weight:600; }
+  .refreshing{ opacity:.6; }
 </style>
 </head>
 <body>
-  <div class="top">
-    <h1>📊 琪琪的专属</h1>
+  <div class="header">
+    <img src="./logo.jpg" class="logo" alt="Qi Studio">
+    <div class="brand">
+      <h1>琪琪的专属</h1>
+      <div class="tag">Qi Studio · 销售看板</div>
+    </div>
     <button class="refresh" id="refreshBtn">↻ 刷新</button>
   </div>
-  <div class="sub" style="padding:0 4px 10px;"><span class="dot" id="dot"></span><span id="upd">加载中…</span></div>
+  <div class="sub" style="padding:0 4px 14px;"><span class="dot" id="dot"></span><span id="upd">加载中…</span></div>
   <div id="root"><div class="empty">正在加载销售数据…</div></div>
 
   <div class="section-t">今日各店铺业绩</div>
@@ -139,26 +152,26 @@ function render(d){
     for(let g=0;g<=gl;g++){
       const yy=padT+(ih/g)*g;
       const val=topMax-(topMax-baseMin)*(g/gl);
-      grid+='<line x1="'+padL+'" y1="'+yy.toFixed(1)+'" x2="'+(W-padR)+'" y2="'+yy.toFixed(1)+'" stroke="#eef0f3" stroke-width="1"/>'+
-            '<text x="'+(W-padR)+'" y="'+(yy-3).toFixed(1)+'" text-anchor="end" font-size="9" fill="#b0b5bd">'+fmtK(val)+'</text>';
+      grid+='<line x1="'+padL+'" y1="'+yy.toFixed(1)+'" x2="'+(W-padR)+'" y2="'+yy.toFixed(1)+'" stroke="#ffe6ec" stroke-width="1"/>'+
+            '<text x="'+(W-padR)+'" y="'+(yy-3).toFixed(1)+'" text-anchor="end" font-size="9" fill="#d6b0bd">'+fmtK(val)+'</text>';
     }
     let xlab='';
     pts.forEach((p,i)=>{
       if(i%5===0 || i===n-1){
         let anc='middle', xx=p.x;
         if(i===0){ anc='start'; xx=padL; } else if(i===n-1){ anc='end'; xx=W-padR; }
-        xlab+='<text x="'+xx.toFixed(1)+'" y="'+(H-8)+'" text-anchor="'+anc+'" font-size="9" fill="#8a9099">'+p.d.slice(5)+'</text>';
+        xlab+='<text x="'+xx.toFixed(1)+'" y="'+(H-8)+'" text-anchor="'+anc+'" font-size="9" fill="#b08c99">'+p.d.slice(5)+'</text>';
       }
     });
     let peakIdx=0; pts.forEach((p,i)=>{ if(p.v>pts[peakIdx].v) peakIdx=i; });
     const svg='<svg class="trend-svg" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="xMidYMid meet">'+
       '<defs><linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">'+
-      '<stop offset="0%" stop-color="#3b6ef5" stop-opacity="0.30"/>'+
-      '<stop offset="100%" stop-color="#3b6ef5" stop-opacity="0.02"/></linearGradient></defs>'+
+      '<stop offset="0%" stop-color="#ff6b9d" stop-opacity="0.32"/>'+
+      '<stop offset="100%" stop-color="#ff6b9d" stop-opacity="0.03"/></linearGradient></defs>'+
       grid+
       '<path d="'+area+'" fill="url(#areaGrad)"/>'+
-      '<path d="'+line+'" fill="none" stroke="#3b6ef5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>'+
-      '<circle id="tDot" r="5" fill="#ff7a18" stroke="#fff" stroke-width="2.5" style="display:none"/>'+
+      '<path d="'+line+'" fill="none" stroke="#ff6b9d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>'+
+      '<circle id="tDot" r="5" fill="#ff4081" stroke="#fff" stroke-width="2.5" style="display:none"/>'+
       xlab+'</svg>';
     const wrap='<div class="t-wrap">'+svg+'<div id="tTip" class="t-tip"></div></div>';
     const trendEl=document.getElementById('trend');
