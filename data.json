@@ -1,0 +1,221 @@
+{
+  "error": null,
+  "updatedAt": "2026-08-16T09:12:35.519Z",
+  "today": "2026-08-16",
+  "range7": "2026-08-10 ~ 2026-08-16",
+  "range30": "2026-07-18 ~ 2026-08-16",
+  "platforms": {
+    "today": {
+      "total": {
+        "amount": 6896.9,
+        "count": 121
+      },
+      "byPlatform": {
+        "douyin": {
+          "amount": 6838,
+          "count": 120
+        },
+        "pinduoduo": {
+          "amount": 58.9,
+          "count": 1
+        },
+        "taobao": {
+          "amount": 0,
+          "count": 0
+        }
+      }
+    },
+    "d7": {
+      "total": {
+        "amount": 6896.9,
+        "count": 121
+      },
+      "byPlatform": {
+        "douyin": {
+          "amount": 6838,
+          "count": 120
+        },
+        "pinduoduo": {
+          "amount": 58.9,
+          "count": 1
+        },
+        "taobao": {
+          "amount": 0,
+          "count": 0
+        }
+      }
+    },
+    "d30": {
+      "total": {
+        "amount": 6896.9,
+        "count": 121
+      },
+      "byPlatform": {
+        "douyin": {
+          "amount": 6838,
+          "count": 120
+        },
+        "pinduoduo": {
+          "amount": 58.9,
+          "count": 1
+        },
+        "taobao": {
+          "amount": 0,
+          "count": 0
+        }
+      }
+    }
+  },
+  "stores": [
+    {
+      "name": "My",
+      "platform": "douyin",
+      "platformLabel": "抖店",
+      "amount": 4781.3,
+      "count": 87
+    },
+    {
+      "name": "抖店店铺 3",
+      "platform": "douyin",
+      "platformLabel": "抖店",
+      "amount": 1087.9,
+      "count": 21
+    },
+    {
+      "name": "3号店",
+      "platform": "douyin",
+      "platformLabel": "抖店",
+      "amount": 968.8,
+      "count": 12
+    },
+    {
+      "name": "My gir服装",
+      "platform": "pinduoduo",
+      "platformLabel": "拼多多",
+      "amount": 58.9,
+      "count": 1
+    }
+  ],
+  "daily": [
+    {
+      "date": "2026-07-18",
+      "amount": 0
+    },
+    {
+      "date": "2026-07-19",
+      "amount": 0
+    },
+    {
+      "date": "2026-07-20",
+      "amount": 0
+    },
+    {
+      "date": "2026-07-21",
+      "amount": 0
+    },
+    {
+      "date": "2026-07-22",
+      "amount": 0
+    },
+    {
+      "date": "2026-07-23",
+      "amount": 0
+    },
+    {
+      "date": "2026-07-24",
+      "amount": 0
+    },
+    {
+      "date": "2026-07-25",
+      "amount": 0
+    },
+    {
+      "date": "2026-07-26",
+      "amount": 0
+    },
+    {
+      "date": "2026-07-27",
+      "amount": 0
+    },
+    {
+      "date": "2026-07-28",
+      "amount": 0
+    },
+    {
+      "date": "2026-07-29",
+      "amount": 0
+    },
+    {
+      "date": "2026-07-30",
+      "amount": 0
+    },
+    {
+      "date": "2026-07-31",
+      "amount": 0
+    },
+    {
+      "date": "2026-08-01",
+      "amount": 0
+    },
+    {
+      "date": "2026-08-02",
+      "amount": 0
+    },
+    {
+      "date": "2026-08-03",
+      "amount": 0
+    },
+    {
+      "date": "2026-08-04",
+      "amount": 0
+    },
+    {
+      "date": "2026-08-05",
+      "amount": 0
+    },
+    {
+      "date": "2026-08-06",
+      "amount": 0
+    },
+    {
+      "date": "2026-08-07",
+      "amount": 0
+    },
+    {
+      "date": "2026-08-08",
+      "amount": 0
+    },
+    {
+      "date": "2026-08-09",
+      "amount": 0
+    },
+    {
+      "date": "2026-08-10",
+      "amount": 0
+    },
+    {
+      "date": "2026-08-11",
+      "amount": 0
+    },
+    {
+      "date": "2026-08-12",
+      "amount": 0
+    },
+    {
+      "date": "2026-08-13",
+      "amount": 0
+    },
+    {
+      "date": "2026-08-14",
+      "amount": 0
+    },
+    {
+      "date": "2026-08-15",
+      "amount": 0
+    },
+    {
+      "date": "2026-08-16",
+      "amount": 6896.9
+    }
+  ]
+}
