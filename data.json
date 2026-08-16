@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-08-16T14:51:23.255Z",
+  "updatedAt": "2026-08-16T15:01:23.304Z",
   "today": "2026-08-16",
   "range7": "2026-08-10 ~ 2026-08-16",
   "range30": "2026-07-18 ~ 2026-08-16",
   "platforms": {
     "today": {
       "total": {
-        "amount": 9748.8,
-        "count": 172
+        "amount": 9808.6,
+        "count": 174
       },
       "byPlatform": {
         "douyin": {
-          "amount": 9689.9,
-          "count": 171
+          "amount": 9749.7,
+          "count": 173
         },
         "pinduoduo": {
           "amount": 58.9,
@@ -47,13 +47,13 @@
     },
     "d7": {
       "total": {
-        "amount": 76077.37,
-        "count": 1588
+        "amount": 76137.17,
+        "count": 1590
       },
       "byPlatform": {
         "douyin": {
-          "amount": 65492.34,
-          "count": 1253
+          "amount": 65552.14,
+          "count": 1255
         },
         "pinduoduo": {
           "amount": 10585.03,
@@ -87,13 +87,13 @@
     },
     "d30": {
       "total": {
-        "amount": 330335.93,
-        "count": 6763
+        "amount": 330395.73,
+        "count": 6765
       },
       "byPlatform": {
         "douyin": {
-          "amount": 279401.31,
-          "count": 5163
+          "amount": 279461.11,
+          "count": 5165
         },
         "pinduoduo": {
           "amount": 50934.62,
@@ -131,8 +131,8 @@
       "name": "My",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 7133.9,
-      "count": 131
+      "amount": 7193.7,
+      "count": 133
     },
     {
       "name": "琪宝衣帽室",
@@ -161,8 +161,8 @@
       "name": "My",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 110649.11,
-      "count": 1971
+      "amount": 110708.91,
+      "count": 1973
     },
     {
       "name": "琪宝衣帽室",
@@ -190,8 +190,8 @@
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 279401.31,
-      "count": 5163,
+      "amount": 279461.11,
+      "count": 5165,
       "share": 84.6
     },
     {
@@ -211,7 +211,7 @@
     },
     "worst": {
       "date": "2026-08-16",
-      "amount": 9748.8,
+      "amount": 9808.6,
       "estimateAmount": 0,
       "isEstimate": false
     }
@@ -393,7 +393,7 @@
     },
     {
       "date": "2026-08-16",
-      "amount": 9748.8,
+      "amount": 9808.6,
       "estimateAmount": 0,
       "isEstimate": false
     }
