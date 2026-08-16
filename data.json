@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-08-16T15:21:23.103Z",
+  "updatedAt": "2026-08-16T15:31:24.688Z",
   "today": "2026-08-16",
   "range7": "2026-08-10 ~ 2026-08-16",
   "range30": "2026-07-18 ~ 2026-08-16",
   "platforms": {
     "today": {
       "total": {
-        "amount": 10217.9,
-        "count": 181
+        "amount": 10487.5,
+        "count": 185
       },
       "byPlatform": {
         "douyin": {
-          "amount": 10159,
-          "count": 180
+          "amount": 10428.6,
+          "count": 184
         },
         "pinduoduo": {
           "amount": 58.9,
@@ -47,13 +47,13 @@
     },
     "d7": {
       "total": {
-        "amount": 76546.47,
-        "count": 1597
+        "amount": 76816.07,
+        "count": 1601
       },
       "byPlatform": {
         "douyin": {
-          "amount": 65961.44,
-          "count": 1262
+          "amount": 66231.04,
+          "count": 1266
         },
         "pinduoduo": {
           "amount": 10585.03,
@@ -87,13 +87,13 @@
     },
     "d30": {
       "total": {
-        "amount": 330805.03,
-        "count": 6772
+        "amount": 331074.63,
+        "count": 6776
       },
       "byPlatform": {
         "douyin": {
-          "amount": 279870.41,
-          "count": 5172
+          "amount": 280140.01,
+          "count": 5176
         },
         "pinduoduo": {
           "amount": 50934.62,
@@ -131,8 +131,8 @@
       "name": "My",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 7453.2,
-      "count": 138
+      "amount": 7642.9,
+      "count": 141
     },
     {
       "name": "琪宝衣帽室",
@@ -145,8 +145,8 @@
       "name": "3号店",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 1128.6,
-      "count": 14
+      "amount": 1208.5,
+      "count": 15
     },
     {
       "name": "My gir服装",
@@ -161,8 +161,8 @@
       "name": "My",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 110968.41,
-      "count": 1978
+      "amount": 111158.11,
+      "count": 1981
     },
     {
       "name": "琪宝衣帽室",
@@ -175,8 +175,8 @@
       "name": "3号店",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 66006.92,
-      "count": 1199
+      "amount": 66086.82,
+      "count": 1200
     },
     {
       "name": "My gir服装",
@@ -190,8 +190,8 @@
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 279870.41,
-      "count": 5172,
+      "amount": 280140.01,
+      "count": 5176,
       "share": 84.6
     },
     {
@@ -211,7 +211,7 @@
     },
     "worst": {
       "date": "2026-08-16",
-      "amount": 10217.9,
+      "amount": 10487.5,
       "estimateAmount": 0,
       "isEstimate": false
     }
@@ -393,7 +393,7 @@
     },
     {
       "date": "2026-08-16",
-      "amount": 10217.9,
+      "amount": 10487.5,
       "estimateAmount": 0,
       "isEstimate": false
     }
