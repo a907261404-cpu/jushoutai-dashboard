@@ -64,10 +64,14 @@ const PLAT = { douyin:'抖店', pinduoduo:'拼多多', taobao:'淘宝' };
 function money(n){ return '¥' + (Number(n)||0).toLocaleString('zh-CN',{minimumFractionDigits:2,maximumFractionDigits:2}); }
 function render(d){
   if(d.error){ document.getElementById('root').innerHTML='<div class="err">'+d.error+'</div>'; document.getElementById('stores').innerHTML=''; document.getElementById('trend').innerHTML=''; return; }
-  const card = (title,key)=>{
+  function daysInRange(daily, start, end){
+    return (daily||[]).filter(x => x.date >= start && x.date <= end && Number(x.amount) > 0).length;
+  }
+  const card = (title,key,days)=>{
     const r=d.platforms[key];
     const dy=r.byPlatform.douyin, pdd=r.byPlatform.pinduoduo;
-    return '<div class="card"><div class="title">'+title+'</div>'+
+    const dayTag = (days && days > 0) ? '<span style="font-size:11px;color:var(--sub);font-weight:400;"> · 已累计 '+days+' 天</span>' : '';
+    return '<div class="card"><div class="title">'+title+dayTag+'</div>'+
       '<div class="big"><span class="num">'+money(r.total.amount)+'</span><span class="unit">成交额</span></div>'+
       '<div class="cnt">成交订单 '+r.total.count+' 笔</div>'+
       '<div class="split">'+
@@ -75,10 +79,12 @@ function render(d){
         '<div><div class="p">拼多多</div><div class="v">'+money(pdd.amount)+'</div><div class="cnt">'+pdd.count+'笔</div></div>'+
       '</div></div>';
   };
+  const d7start = (d.range7||'').split(' ~ ')[0] || d.today;
+  const d30start = (d.range30||'').split(' ~ ')[0] || d.today;
   document.getElementById('root').innerHTML =
-    card('今日（'+d.today+'）','today') +
-    card('近 7 天（'+d.range7+'）','d7') +
-    card('近 30 天（'+d.range30+'）','d30');
+    card('今日（'+d.today+'）','today', 1) +
+    card('近 7 天（'+d.range7+'）','d7', daysInRange(d.daily, d7start, d.today)) +
+    card('近 30 天（'+d.range30+'）','d30', daysInRange(d.daily, d30start, d.today));
 
   const st = d.stores||[];
   if(!st.length){ document.getElementById('stores').innerHTML='<div class="empty">今日暂无店铺业绩</div>'; }
