@@ -59,8 +59,9 @@
   <div class="section-t">今日各店铺业绩</div>
   <div id="stores"><div class="empty">加载中…</div></div>
 
-  <div class="section-t">近30天每日成交额</div>
+  <div class="section-t" id="trendTitle">近30天每日成交额</div>
   <div id="trend" class="card" style="padding:12px;"><div class="empty">加载中…</div></div>
+  <div id="trendNote" style="font-size:11px;color:var(--sub);padding:0 4px 6px;line-height:1.5;"></div>
 
 <script>
 const PLAT = { douyin:'抖店', pinduoduo:'拼多多', taobao:'淘宝' };
@@ -101,12 +102,22 @@ function render(d){
   }
 
   const daily = d.daily||[];
-  if(!daily.length){ document.getElementById('trend').innerHTML='<div class="empty">暂无趋势数据</div>'; }
+  if(!daily.length){ document.getElementById('trend').innerHTML='<div class="empty">暂无趋势数据</div>'; document.getElementById('trendNote').textContent=''; }
   else {
     const max = Math.max.apply(null, daily.map(x=>x.amount).concat([1]));
+    const estDays = daily.filter(x=>x.isEstimate).length;
+    const hasEstimate = estDays > 0;
+    const allEstimate = estDays === daily.filter(x=>x.amount>0).length && estDays > 0;
+    document.getElementById('trendTitle').innerHTML = '近30天每日成交额' + (hasEstimate ? '<span style="font-size:11px;color:var(--sub);font-weight:400;margin-left:6px;">含估算占位</span>' : '');
+    document.getElementById('trendNote').innerHTML = allEstimate
+      ? '⚠ 当前近30天全部为估算占位数据（总额按天平均分摊），无法反映真实每日波动。导入真实每日数据后趋势图即可正常使用。'
+      : hasEstimate
+        ? '灰色柱子为估算占位数据，蓝色为真实同步数据。'
+        : '';
     document.getElementById('trend').innerHTML = '<div class="trend">'+daily.map(x=>{
       const h = Math.max(2, (x.amount/max)*100);
-      return '<div class="tcol"><div class="tbar" style="height:'+h+'%"></div><div class="tdate">'+x.date.slice(5)+'</div></div>';
+      const bg = x.isEstimate ? 'linear-gradient(180deg,#c9ccd1,#b0b5bd)' : 'linear-gradient(180deg,#5b8bff,#3b6ef5)';
+      return '<div class="tcol"><div class="tbar" style="height:'+h+'%;background:'+bg+'"></div><div class="tdate">'+x.date.slice(5)+'</div></div>';
     }).join('')+'</div>';
   }
 }
