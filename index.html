@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<title>聚售台 · 销售看板</title>
+<style>
+  :root{ --bg:#f5f6f8; --card:#ffffff; --red:#e4393c; --green:#07a35a; --text:#1f2329; --sub:#8a9099; --line:#eef0f3; --blue:#3b6ef5; }
+  *{ box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body{ margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; padding:env(safe-area-inset-top) 12px calc(20px + env(safe-area-inset-bottom)); }
+  .top{ display:flex; align-items:center; justify-content:space-between; padding:16px 4px 10px; }
+  .top h1{ font-size:19px; margin:0; font-weight:700; }
+  .dot{ width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;margin-right:6px;vertical-align:middle; }
+  .dot.off{ background:#c9ccd1; }
+  .sub{ font-size:12px;color:var(--sub); }
+  .refresh{ border:none; background:var(--blue); color:#fff; font-size:13px; font-weight:600; padding:8px 14px; border-radius:10px; }
+  .refresh:active{ opacity:.8; }
+  .cards{ display:grid; grid-template-columns:1fr; gap:12px; }
+  .card{ background:var(--card); border-radius:16px; padding:16px; box-shadow:0 2px 10px rgba(0,0,0,.04); }
+  .card .title{ font-size:13px;color:var(--sub);margin-bottom:10px; }
+  .big{ display:flex; align-items:baseline; gap:8px; }
+  .big .num{ font-size:30px; font-weight:800; color:var(--red); letter-spacing:-0.5px; }
+  .big .unit{ font-size:14px;color:var(--sub); }
+  .cnt{ font-size:13px;color:var(--sub);margin-top:6px; }
+  .split{ display:flex; gap:10px; margin-top:12px; }
+  .split > div{ flex:1; background:var(--bg); border-radius:10px; padding:10px; }
+  .split .p{ font-size:12px;color:var(--sub); }
+  .split .v{ font-size:16px;font-weight:700;margin-top:2px; }
+  .section-t{ font-size:15px;font-weight:700;margin:18px 4px 8px; }
+  .store{ background:var(--card); border-radius:12px; padding:12px; margin-bottom:8px; box-shadow:0 1px 6px rgba(0,0,0,.03); display:flex; align-items:center; gap:10px; }
+  .store .badge{ font-size:11px; font-weight:700; color:#fff; border-radius:7px; padding:3px 7px; flex:none; }
+  .badge.douyin{ background:#2b2b3a; } .badge.pinduoduo{ background:#e23a3a; } .badge.taobao{ background:#ff5000; } .badge.other{ background:#8a9099; }
+  .store .name{ flex:1; font-size:14px; font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .store .val{ text-align:right; }
+  .store .amt{ font-size:15px; font-weight:800; color:var(--red); }
+  .store .cnt{ font-size:11px; color:var(--sub); }
+  .trend{ display:flex; align-items:flex-end; gap:4px; height:120px; overflow-x:auto; padding-top:8px; }
+  .tcol{ flex:1; min-width:18px; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:100%; }
+  .tbar{ width:70%; max-width:34px; background:linear-gradient(180deg,#5b8bff,#3b6ef5); border-radius:6px 6px 0 0; min-height:2px; }
+  .tdate{ font-size:9px; color:var(--sub); margin-top:5px; white-space:nowrap; }
+  .empty{ text-align:center; color:var(--sub); padding:30px; font-size:14px; }
+  .err{ color:var(--red); padding:20px; text-align:center; }
+  .refreshing{ opacity:.55; }
+</style>
+</head>
+<body>
+  <div class="top">
+    <h1>📊 聚售台 · 销售看板</h1>
+    <button class="refresh" id="refreshBtn">↻ 刷新</button>
+  </div>
+  <div class="sub" style="padding:0 4px 10px;"><span class="dot" id="dot"></span><span id="upd">加载中…</span></div>
+  <div id="root"><div class="empty">正在加载销售数据…</div></div>
+
+  <div class="section-t">今日各店铺业绩</div>
+  <div id="stores"><div class="empty">加载中…</div></div>
+
+  <div class="section-t">近30天每日成交额</div>
+  <div id="trend" class="card" style="padding:12px;"><div class="empty">加载中…</div></div>
+
+<script>
+const PLAT = { douyin:'抖店', pinduoduo:'拼多多', taobao:'淘宝' };
+function money(n){ return '¥' + (Number(n)||0).toLocaleString('zh-CN',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+function render(d){
+  if(d.error){ document.getElementById('root').innerHTML='<div class="err">'+d.error+'</div>'; document.getElementById('stores').innerHTML=''; document.getElementById('trend').innerHTML=''; return; }
+  const card = (title,key)=>{
+    const r=d.platforms[key];
+    const dy=r.byPlatform.douyin, pdd=r.byPlatform.pinduoduo;
+    return '<div class="card"><div class="title">'+title+'</div>'+
+      '<div class="big"><span class="num">'+money(r.total.amount)+'</span><span class="unit">成交额</span></div>'+
+      '<div class="cnt">成交订单 '+r.total.count+' 笔</div>'+
+      '<div class="split">'+
+        '<div><div class="p">抖店</div><div class="v">'+money(dy.amount)+'</div><div class="cnt">'+dy.count+'笔</div></div>'+
+        '<div><div class="p">拼多多</div><div class="v">'+money(pdd.amount)+'</div><div class="cnt">'+pdd.count+'笔</div></div>'+
+      '</div></div>';
+  };
+  document.getElementById('root').innerHTML =
+    card('今日（'+d.today+'）','today') +
+    card('近 7 天（'+d.range7+'）','d7') +
+    card('近 30 天（'+d.range30+'）','d30');
+
+  const st = d.stores||[];
+  if(!st.length){ document.getElementById('stores').innerHTML='<div class="empty">今日暂无店铺业绩</div>'; }
+  else {
+    document.getElementById('stores').innerHTML = st.map(s=>{
+      const cls = s.platform==='douyin'?'douyin':s.platform==='pinduoduo'?'pinduoduo':s.platform==='taobao'?'taobao':'other';
+      return '<div class="store"><span class="badge '+cls+'">'+(PLAT[s.platform]||s.platform)+'</span>'+
+        '<span class="name">'+escapeHtml(s.name)+'</span>'+
+        '<span class="val"><div class="amt">'+money(s.amount)+'</div><div class="cnt">'+s.count+' 笔</div></span></div>';
+    }).join('');
+  }
+
+  const daily = d.daily||[];
+  if(!daily.length){ document.getElementById('trend').innerHTML='<div class="empty">暂无趋势数据</div>'; }
+  else {
+    const max = Math.max.apply(null, daily.map(x=>x.amount).concat([1]));
+    document.getElementById('trend').innerHTML = '<div class="trend">'+daily.map(x=>{
+      const h = Math.max(2, (x.amount/max)*100);
+      return '<div class="tcol"><div class="tbar" style="height:'+h+'%"></div><div class="tdate">'+x.date.slice(5)+'</div></div>';
+    }).join('')+'</div>';
+  }
+}
+function escapeHtml(s){ return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+let timer=null;
+function tick(){
+  document.body.classList.add('refreshing');
+  fetch('./data.json?t='+Date.now()).then(r=>r.json()).then(d=>{
+    render(d);
+    const t = d.updatedAt? new Date(d.updatedAt).toLocaleString('zh-CN') : '—';
+    document.getElementById('upd').textContent = '更新于 '+t;
+    document.getElementById('dot').className='dot';
+  }).catch(e=>{
+    document.getElementById('dot').className='dot off';
+    document.getElementById('upd').textContent='刷新失败，将自动重试';
+  }).finally(()=>{ document.body.classList.remove('refreshing'); });
+}
+document.getElementById('refreshBtn').addEventListener('click', tick);
+tick();
+timer = setInterval(tick, 30000);
+document.addEventListener('visibilitychange', ()=>{ if(!document.hidden) tick(); });
+</script>
+</body>
+</html>
