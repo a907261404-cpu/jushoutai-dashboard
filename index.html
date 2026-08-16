@@ -12,7 +12,7 @@
 <style>
   :root{ --bg:#f5f6f8; --card:#ffffff; --red:#e4393c; --green:#07a35a; --text:#1f2329; --sub:#8a9099; --line:#eef0f3; --blue:#3b6ef5; }
   *{ box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
-  body{ margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; padding:env(safe-area-inset-top) 12px calc(20px + env(safe-area-inset-bottom)); }
+  body{ margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; padding:env(safe-area-inset-top) 12px calc(20px + env(safe-area-inset-bottom)); overflow-x:hidden; }
   .top{ display:flex; align-items:center; justify-content:space-between; padding:16px 4px 10px; }
   .top h1{ font-size:19px; margin:0; font-weight:700; }
   .dot{ width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;margin-right:6px;vertical-align:middle; }
@@ -171,10 +171,14 @@ function render(d){
       dot.setAttribute('cx', p.x.toFixed(1));
       dot.setAttribute('cy', p.y.toFixed(1));
       dot.style.display='';
-      tip.style.left=(p.x/W*100)+'%';
-      tip.style.top=(p.y/H*100)+'%';
       tip.textContent=p.d+'  '+money(p.v);
       tip.style.display='block';
+      const wrapW = svgEl.clientWidth || trendEl.clientWidth || 1;
+      const tipW = tip.offsetWidth || 0;
+      let xPx = (p.x / W) * wrapW;
+      xPx = Math.max(tipW/2 + 2, Math.min(wrapW - tipW/2 - 2, xPx));
+      tip.style.left = xPx + 'px';
+      tip.style.top = (p.y/H*100) + '%';
     }
     trendEl.onpointerdown=function(e){
       const r=svgEl.getBoundingClientRect();
