@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>聚售台 · 销售看板</title>
 <style>
   :root{ --bg:#f5f6f8; --card:#ffffff; --red:#e4393c; --green:#07a35a; --text:#1f2329; --sub:#8a9099; --line:#eef0f3; --blue:#3b6ef5; }
@@ -121,10 +124,16 @@ function tick(){
     document.getElementById('upd').textContent='刷新失败，将自动重试';
   }).finally(()=>{ document.body.classList.remove('refreshing'); });
 }
+function startTimer(){ if(timer) clearInterval(timer); timer = setInterval(tick, 30000); }
 document.getElementById('refreshBtn').addEventListener('click', tick);
 tick();
-timer = setInterval(tick, 30000);
-document.addEventListener('visibilitychange', ()=>{ if(!document.hidden) tick(); });
+startTimer();
+// 手机锁屏/后台/切标签后回到前台，立即刷新并重置定时器
+// 浏览器在后台会节流 setInterval，仅靠 30 秒轮询不够，必须补这些事件
+document.addEventListener('visibilitychange', ()=>{ if(!document.hidden){ tick(); startTimer(); } });
+window.addEventListener('pageshow', ()=> tick());
+window.addEventListener('focus', ()=> tick());
+window.addEventListener('online', ()=> tick());
 </script>
 </body>
 </html>
