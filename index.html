@@ -43,6 +43,7 @@
   .tcol{ flex:1; min-width:18px; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:100%; }
   .tbar{ width:70%; max-width:34px; background:linear-gradient(180deg,#5b8bff,#3b6ef5); border-radius:6px 6px 0 0; min-height:2px; }
   .tdate{ font-size:9px; color:var(--sub); margin-top:5px; white-space:nowrap; }
+  .trend-svg{ width:100%; height:auto; display:block; }
   .empty{ text-align:center; color:var(--sub); padding:30px; font-size:14px; }
   .err{ color:var(--red); padding:20px; text-align:center; }
   .refreshing{ opacity:.55; }
@@ -66,6 +67,18 @@
 <script>
 const PLAT = { douyin:'抖店', pinduoduo:'拼多多', taobao:'淘宝' };
 function money(n){ return '¥' + (Number(n)||0).toLocaleString('zh-CN',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+function fmtK(v){ v=Number(v)||0; if(v>=10000) return (v/10000).toFixed(1)+'万'; if(v>=1000) return (v/1000).toFixed(1)+'k'; return Math.round(v).toString(); }
+function smoothPath(pts){
+  if(pts.length<2) return pts.length ? 'M'+pts[0].x.toFixed(1)+','+pts[0].y.toFixed(1) : '';
+  let d='M'+pts[0].x.toFixed(1)+','+pts[0].y.toFixed(1);
+  for(let i=0;i<pts.length-1;i++){
+    const p0=pts[i-1]||pts[i], p1=pts[i], p2=pts[i+1], p3=pts[i+2]||p2;
+    const c1x=p1.x+(p2.x-p0.x)/6, c1y=p1.y+(p2.y-p0.y)/6;
+    const c2x=p2.x-(p3.x-p1.x)/6, c2y=p2.y-(p3.y-p1.y)/6;
+    d+=' C'+c1x.toFixed(1)+','+c1y.toFixed(1)+' '+c2x.toFixed(1)+','+c2y.toFixed(1)+' '+p2.x.toFixed(1)+','+p2.y.toFixed(1);
+  }
+  return d;
+}
 function render(d){
   if(d.error){ document.getElementById('root').innerHTML='<div class="err">'+d.error+'</div>'; document.getElementById('stores').innerHTML=''; document.getElementById('trend').innerHTML=''; return; }
   function daysInRange(daily, start, end){
@@ -102,23 +115,50 @@ function render(d){
   }
 
   const daily = d.daily||[];
-  if(!daily.length){ document.getElementById('trend').innerHTML='<div class="empty">暂无趋势数据</div>'; document.getElementById('trendNote').textContent=''; }
+  if(!daily.length){ document.getElementById('trend').innerHTML='<div class="empty">暂无趋势数据</div>'; }
   else {
-    const max = Math.max.apply(null, daily.map(x=>x.amount).concat([1]));
-    const estDays = daily.filter(x=>x.isEstimate).length;
-    const hasEstimate = estDays > 0;
-    const allEstimate = estDays === daily.filter(x=>x.amount>0).length && estDays > 0;
-    document.getElementById('trendTitle').innerHTML = '近30天每日成交额' + (hasEstimate ? '<span style="font-size:11px;color:var(--sub);font-weight:400;margin-left:6px;">含估算占位</span>' : '');
-    document.getElementById('trendNote').innerHTML = allEstimate
-      ? '⚠ 当前近30天全部为估算占位数据（总额按天平均分摊），无法反映真实每日波动。导入真实每日数据后趋势图即可正常使用。'
-      : hasEstimate
-        ? '灰色柱子为估算占位数据，蓝色为真实同步数据。'
-        : '';
-    document.getElementById('trend').innerHTML = '<div class="trend">'+daily.map(x=>{
-      const h = Math.max(2, (x.amount/max)*100);
-      const bg = x.isEstimate ? 'linear-gradient(180deg,#c9ccd1,#b0b5bd)' : 'linear-gradient(180deg,#5b8bff,#3b6ef5)';
-      return '<div class="tcol"><div class="tbar" style="height:'+h+'%;background:'+bg+'"></div><div class="tdate">'+x.date.slice(5)+'</div></div>';
-    }).join('')+'</div>';
+    document.getElementById('trendTitle').textContent = '近30天每日成交额';
+    const W=680, H=220, padL=12, padR=12, padT=28, padB=26;
+    const iw=W-padL-padR, ih=H-padT-padB;
+    const vals=daily.map(x=>x.amount);
+    const rawMax=Math.max.apply(null, vals.concat([1]));
+    const rawMin=Math.min.apply(null, vals.concat([0]));
+    const baseMin=0;
+    const topMax = rawMax===rawMin ? rawMax*1.18 : rawMax;
+    const n=daily.length;
+    const X=i=> padL + (n<=1? iw/2 : (i/(n-1))*iw);
+    const Y=v=> padT + ih - ((v-baseMin)/(topMax-baseMin||1))*ih;
+    const pts=daily.map((x,i)=>({ x:X(i), y:Y(x.amount), v:x.amount, d:x.date }));
+    const line=smoothPath(pts);
+    const area=line+' L'+pts[n-1].x.toFixed(1)+','+(padT+ih)+' L'+pts[0].x.toFixed(1)+','+(padT+ih)+' Z';
+    let grid='';
+    const gl=3;
+    for(let g=0;g<=gl;g++){
+      const yy=padT+(ih/g)*g;
+      const val=topMax-(topMax-baseMin)*(g/gl);
+      grid+='<line x1="'+padL+'" y1="'+yy.toFixed(1)+'" x2="'+(W-padR)+'" y2="'+yy.toFixed(1)+'" stroke="#eef0f3" stroke-width="1"/>'+
+            '<text x="'+(W-padR)+'" y="'+(yy-3).toFixed(1)+'" text-anchor="end" font-size="9" fill="#b0b5bd">'+fmtK(val)+'</text>';
+    }
+    let xlab='';
+    pts.forEach((p,i)=>{
+      if(i%5===0 || i===n-1){
+        let anc='middle', xx=p.x;
+        if(i===0){ anc='start'; xx=padL; } else if(i===n-1){ anc='end'; xx=W-padR; }
+        xlab+='<text x="'+xx.toFixed(1)+'" y="'+(H-8)+'" text-anchor="'+anc+'" font-size="9" fill="#8a9099">'+p.d.slice(5)+'</text>';
+      }
+    });
+    let peak=pts[0]; pts.forEach(p=>{ if(p.v>peak.v) peak=p; });
+    const peakDot='<circle cx="'+peak.x.toFixed(1)+'" cy="'+peak.y.toFixed(1)+'" r="3.5" fill="#3b6ef5" stroke="#fff" stroke-width="2"/>'+
+      '<text x="'+peak.x.toFixed(1)+'" y="'+(peak.y-9).toFixed(1)+'" text-anchor="middle" font-size="10" font-weight="700" fill="#3b6ef5">'+money(peak.v)+'</text>';
+    const svg='<svg class="trend-svg" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="xMidYMid meet">'+
+      '<defs><linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">'+
+      '<stop offset="0%" stop-color="#3b6ef5" stop-opacity="0.30"/>'+
+      '<stop offset="100%" stop-color="#3b6ef5" stop-opacity="0.02"/></linearGradient></defs>'+
+      grid+
+      '<path d="'+area+'" fill="url(#areaGrad)"/>'+
+      '<path d="'+line+'" fill="none" stroke="#3b6ef5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>'+
+      peakDot+xlab+'</svg>';
+    document.getElementById('trend').innerHTML=svg;
   }
 }
 function escapeHtml(s){ return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
