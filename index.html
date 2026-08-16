@@ -43,7 +43,10 @@
   .tcol{ flex:1; min-width:18px; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:100%; }
   .tbar{ width:70%; max-width:34px; background:linear-gradient(180deg,#5b8bff,#3b6ef5); border-radius:6px 6px 0 0; min-height:2px; }
   .tdate{ font-size:9px; color:var(--sub); margin-top:5px; white-space:nowrap; }
-  .trend-svg{ width:100%; height:auto; display:block; }
+  .trend-svg{ width:100%; height:auto; display:block; touch-action:pan-y; }
+  .t-wrap{ position:relative; }
+  .t-tip{ position:absolute; transform:translate(-50%,-118%); background:#ff7a18; color:#fff; font-size:11px; font-weight:700; padding:4px 9px; border-radius:9px; white-space:nowrap; pointer-events:none; display:none; box-shadow:0 3px 10px rgba(255,122,24,.35); z-index:2; }
+  .t-tip::after{ content:''; position:absolute; left:50%; bottom:-5px; transform:translateX(-50%); border:5px solid transparent; border-top-color:#ff7a18; }
   .empty{ text-align:center; color:var(--sub); padding:30px; font-size:14px; }
   .err{ color:var(--red); padding:20px; text-align:center; }
   .refreshing{ opacity:.55; }
@@ -147,9 +150,7 @@ function render(d){
         xlab+='<text x="'+xx.toFixed(1)+'" y="'+(H-8)+'" text-anchor="'+anc+'" font-size="9" fill="#8a9099">'+p.d.slice(5)+'</text>';
       }
     });
-    let peak=pts[0]; pts.forEach(p=>{ if(p.v>peak.v) peak=p; });
-    const peakDot='<circle cx="'+peak.x.toFixed(1)+'" cy="'+peak.y.toFixed(1)+'" r="3.5" fill="#3b6ef5" stroke="#fff" stroke-width="2"/>'+
-      '<text x="'+peak.x.toFixed(1)+'" y="'+(peak.y-9).toFixed(1)+'" text-anchor="middle" font-size="10" font-weight="700" fill="#3b6ef5">'+money(peak.v)+'</text>';
+    let peakIdx=0; pts.forEach((p,i)=>{ if(p.v>pts[peakIdx].v) peakIdx=i; });
     const svg='<svg class="trend-svg" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="xMidYMid meet">'+
       '<defs><linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">'+
       '<stop offset="0%" stop-color="#3b6ef5" stop-opacity="0.30"/>'+
@@ -157,8 +158,34 @@ function render(d){
       grid+
       '<path d="'+area+'" fill="url(#areaGrad)"/>'+
       '<path d="'+line+'" fill="none" stroke="#3b6ef5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>'+
-      peakDot+xlab+'</svg>';
-    document.getElementById('trend').innerHTML=svg;
+      '<circle id="tDot" r="5" fill="#ff7a18" stroke="#fff" stroke-width="2.5" style="display:none"/>'+
+      xlab+'</svg>';
+    const wrap='<div class="t-wrap">'+svg+'<div id="tTip" class="t-tip"></div></div>';
+    const trendEl=document.getElementById('trend');
+    trendEl.innerHTML=wrap;
+    const svgEl=trendEl.querySelector('.trend-svg');
+    const dot=document.getElementById('tDot');
+    const tip=document.getElementById('tTip');
+    function show(idx){
+      const p=pts[idx];
+      dot.setAttribute('cx', p.x.toFixed(1));
+      dot.setAttribute('cy', p.y.toFixed(1));
+      dot.style.display='';
+      tip.style.left=(p.x/W*100)+'%';
+      tip.style.top=(p.y/H*100)+'%';
+      tip.textContent=p.d+'  '+money(p.v);
+      tip.style.display='block';
+    }
+    trendEl.onpointerdown=function(e){
+      const r=svgEl.getBoundingClientRect();
+      if(!r.width) return;
+      const cx = e.clientX!=null ? e.clientX : (e.touches && e.touches[0] ? e.touches[0].clientX : 0);
+      const px=(cx - r.left)/r.width;
+      let idx=Math.round(((px*W - padL)/iw)*(n-1));
+      idx=Math.max(0, Math.min(n-1, idx));
+      show(idx);
+    };
+    show(peakIdx);
   }
 }
 function escapeHtml(s){ return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
