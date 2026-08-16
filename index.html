@@ -58,6 +58,32 @@
   .t-tip::after{ content:''; position:absolute; left:50%; bottom:-5px; transform:translateX(-50%); border:5px solid transparent; border-top-color:#ff4081; }
   .empty{ text-align:center; color:var(--sub); padding:34px; font-size:14px; }
   .err{ color:#ff4081; padding:20px; text-align:center; font-weight:600; }
+  .delta{ font-size:13px; font-weight:800; margin-top:8px; display:flex; align-items:center; gap:5px; }
+  .delta.up{ color:#ff3d6e; }
+  .delta.down{ color:#2fb37a; }
+  .delta.flat{ color:var(--sub); font-weight:600; font-size:12px; }
+  .pshare-bar{ display:flex; height:14px; border-radius:50px; overflow:hidden; margin-bottom:14px; }
+  .ps{ height:100%; }
+  .ps-row{ display:flex; align-items:center; gap:8px; font-size:13px; padding:3px 0; }
+  .dotc{ width:10px;height:10px;border-radius:50%; flex:none; }
+  .ps-name{ flex:1; color:var(--text); font-weight:700; }
+  .ps-val{ color:var(--sub); font-weight:700; }
+  .rank{ background:var(--card); border-radius:16px; padding:13px 14px; margin-bottom:10px; box-shadow:0 2px 12px rgba(255,107,157,.08); }
+  .r-top{ display:flex; align-items:center; gap:8px; }
+  .r-top .badge{ font-size:10px; padding:3px 8px; }
+  .r-name{ flex:1; font-size:13px; font-weight:700; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .r-amt{ font-size:14px; font-weight:800; background:linear-gradient(135deg,#ff4081,#ff6b9d); -webkit-background-clip:text; color:transparent; }
+  .r-bar{ height:8px; background:var(--pink-light); border-radius:50px; margin:9px 0 4px; overflow:hidden; }
+  .r-fill{ height:100%; background:linear-gradient(90deg,#ff8fab,#ff6b9d); border-radius:50px; }
+  .r-cnt{ font-size:11px; color:var(--sub); }
+  .hl-wrap{ display:flex; gap:12px; }
+  .hl{ flex:1; background:var(--card); border-radius:18px; padding:16px; text-align:center; box-shadow:var(--shadow); }
+  .hl.best{ background:linear-gradient(135deg,#fff0f5,#ffe3ec); }
+  .hl.worst{ background:linear-gradient(135deg,#f3f6ff,#eef1fb); }
+  .hl-t{ font-size:12px; color:var(--sub); font-weight:700; }
+  .hl-d{ font-size:13px; color:var(--text); font-weight:800; margin:6px 0 2px; }
+  .hl-a{ font-size:18px; font-weight:800; background:linear-gradient(135deg,#ff4081,#ff6b9d); -webkit-background-clip:text; color:transparent; }
+  .hl.worst .hl-a{ background:linear-gradient(135deg,#7c8cf0,#9aa8f5); -webkit-background-clip:text; color:transparent; }
   .refreshing{ opacity:.6; }
 </style>
 </head>
@@ -76,12 +102,23 @@
   <div class="section-t">今日各店铺业绩</div>
   <div id="stores"><div class="empty">加载中…</div></div>
 
+  <div class="section-t" id="rankTitle" style="display:none;">🏅 近30天店铺累计</div>
+  <div id="rank"></div>
+
+  <div class="section-t" id="shareTitle" style="display:none;">💗 平台成交占比</div>
+  <div id="share"></div>
+
+  <div class="section-t" id="hlTitle" style="display:none;">✨ 本月高光时刻</div>
+  <div id="hl"></div>
+
   <div class="section-t" id="trendTitle">近30天每日成交额</div>
   <div id="trend" class="card" style="padding:12px;"><div class="empty">加载中…</div></div>
   <div id="trendNote" style="font-size:11px;color:var(--sub);padding:0 4px 6px;line-height:1.5;"></div>
 
 <script>
 const PLAT = { douyin:'抖店', pinduoduo:'拼多多', taobao:'淘宝' };
+const SHARE_COLOR = { douyin:'#ff6b9d', pinduoduo:'#ffb3c6', taobao:'#ffd6e0', other:'#d1bfc4' };
+function shareColor(p){ return SHARE_COLOR[p] || '#d1bfc4'; }
 function money(n){ return '¥' + (Number(n)||0).toLocaleString('zh-CN',{minimumFractionDigits:2,maximumFractionDigits:2}); }
 function fmtK(v){ v=Number(v)||0; if(v>=10000) return (v/10000).toFixed(1)+'万'; if(v>=1000) return (v/1000).toFixed(1)+'k'; return Math.round(v).toString(); }
 function smoothPath(pts){
@@ -104,9 +141,22 @@ function render(d){
     const r=d.platforms[key];
     const dy=r.byPlatform.douyin, pdd=r.byPlatform.pinduoduo;
     const dayTag = (days && days > 0) ? '<span style="font-size:11px;color:var(--sub);font-weight:400;"> · 已累计 '+days+' 天</span>' : '';
+    const count = r.total.count||0;
+    const avg = count>0 ? r.total.amount/count : 0;
+    const prevAmt = r.prev ? (r.prev.total.amount||0) : 0;
+    let delta = '';
+    if (prevAmt > 0) {
+      const pct = (r.total.amount - prevAmt) / prevAmt * 100;
+      const cls = pct > 0.05 ? 'up' : pct < -0.05 ? 'down' : 'flat';
+      const arrow = pct > 0.05 ? '▲' : pct < -0.05 ? '▼' : '—';
+      delta = '<div class="delta '+cls+'">'+arrow+' '+Math.abs(pct).toFixed(1)+'% <span style="opacity:.7;font-weight:600;">较上一周期</span></div>';
+    } else {
+      delta = '<div class="delta flat">暂无对比数据</div>';
+    }
     return '<div class="card"><div class="title">'+title+dayTag+'</div>'+
       '<div class="big"><span class="num">'+money(r.total.amount)+'</span><span class="unit">成交额</span></div>'+
-      '<div class="cnt">成交订单 '+r.total.count+' 笔</div>'+
+      '<div class="cnt">成交订单 '+count+' 笔 · 单笔均 '+money(avg)+'</div>'+
+      delta +
       '<div class="split">'+
         '<div><div class="p">抖店</div><div class="v">'+money(dy.amount)+'</div><div class="cnt">'+dy.count+'笔</div></div>'+
         '<div><div class="p">拼多多</div><div class="v">'+money(pdd.amount)+'</div><div class="cnt">'+pdd.count+'笔</div></div>'+
@@ -129,6 +179,40 @@ function render(d){
         '<span class="val"><div class="amt">'+money(s.amount)+'</div><div class="cnt">'+s.count+' 笔</div></span></div>';
     }).join('');
   }
+
+  // 近30天店铺累计排行
+  const s30 = d.stores30||[];
+  if(s30.length){
+    const max = Math.max.apply(null, s30.map(x=>x.amount).concat([1]));
+    document.getElementById('rank').innerHTML = s30.map((s,i)=>{
+      const cls = s.platform==='douyin'?'douyin':s.platform==='pinduoduo'?'pinduoduo':s.platform==='taobao'?'taobao':'other';
+      const w = Math.max(4, s.amount/max*100);
+      return '<div class="rank"><div class="r-top"><span class="badge '+cls+'">'+(i+1)+' · '+(PLAT[s.platform]||s.platform)+'</span>'+
+        '<span class="r-name">'+escapeHtml(s.name)+'</span>'+
+        '<span class="r-amt">'+money(s.amount)+'</span></div>'+
+        '<div class="r-bar"><div class="r-fill" style="width:'+w+'%"></div></div>'+
+        '<div class="r-cnt">'+s.count+' 笔</div></div>';
+    }).join('');
+    document.getElementById('rankTitle').style.display='';
+  } else { document.getElementById('rankTitle').style.display='none'; document.getElementById('rank').innerHTML=''; }
+
+  // 平台成交占比
+  const ps = d.platformShare||[];
+  if(ps.length){
+    document.getElementById('share').innerHTML = '<div class="card" style="padding:16px;">'+
+      '<div class="pshare-bar">'+ps.map(p=>'<div class="ps" style="width:'+p.share+'%;background:'+shareColor(p.platform)+'"></div>').join('')+'</div>'+
+      ps.map(p=>'<div class="ps-row"><span class="dotc" style="background:'+shareColor(p.platform)+'"></span><span class="ps-name">'+(PLAT[p.platform]||p.platform)+'</span><span class="ps-val">'+money(p.amount)+' · '+p.share+'%</span></div>').join('')+
+      '</div>';
+    document.getElementById('shareTitle').style.display='';
+  } else { document.getElementById('shareTitle').style.display='none'; document.getElementById('share').innerHTML=''; }
+
+  // 本月高光时刻
+  const hl = d.highlight||{};
+  if(hl.best && hl.worst){
+    document.getElementById('hl').innerHTML = '<div class="hl-wrap"><div class="hl best"><div class="hl-t">🏆 最佳日</div><div class="hl-d">'+hl.best.date+'</div><div class="hl-a">'+money(hl.best.amount)+'</div></div>'+
+      '<div class="hl worst"><div class="hl-t">🌧 最淡日</div><div class="hl-d">'+hl.worst.date+'</div><div class="hl-a">'+money(hl.worst.amount)+'</div></div></div>';
+    document.getElementById('hlTitle').style.display='';
+  } else { document.getElementById('hlTitle').style.display='none'; document.getElementById('hl').innerHTML=''; }
 
   const daily = d.daily||[];
   if(!daily.length){ document.getElementById('trend').innerHTML='<div class="empty">暂无趋势数据</div>'; }
