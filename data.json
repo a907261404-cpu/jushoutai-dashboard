@@ -1,23 +1,23 @@
 {
   "error": null,
-  "updatedAt": "2026-08-16T16:05:09.740Z",
-  "today": "2026-08-16",
-  "range7": "2026-08-10 ~ 2026-08-16",
-  "range30": "2026-07-18 ~ 2026-08-16",
+  "updatedAt": "2026-08-16T16:09:21.893Z",
+  "today": "2026-08-17",
+  "range7": "2026-08-11 ~ 2026-08-17",
+  "range30": "2026-07-19 ~ 2026-08-17",
   "platforms": {
     "today": {
       "total": {
-        "amount": 10966.6,
-        "count": 194
+        "amount": 29.9,
+        "count": 1
       },
       "byPlatform": {
         "douyin": {
-          "amount": 10907.7,
-          "count": 193
+          "amount": 29.9,
+          "count": 1
         },
         "pinduoduo": {
-          "amount": 58.9,
-          "count": 1
+          "amount": 0,
+          "count": 0
         },
         "taobao": {
           "amount": 0,
@@ -26,17 +26,17 @@
       },
       "prev": {
         "total": {
-          "amount": 11054.97,
-          "count": 291
+          "amount": 10966.6,
+          "count": 194
         },
         "byPlatform": {
           "douyin": {
-            "amount": 9300.49,
-            "count": 232
+            "amount": 10907.7,
+            "count": 193
           },
           "pinduoduo": {
-            "amount": 1754.48,
-            "count": 59
+            "amount": 58.9,
+            "count": 1
           },
           "taobao": {
             "amount": 0,
@@ -47,17 +47,17 @@
     },
     "d7": {
       "total": {
-        "amount": 77295.17,
-        "count": 1610
+        "amount": 66270.35,
+        "count": 1386
       },
       "byPlatform": {
         "douyin": {
-          "amount": 66710.14,
-          "count": 1275
+          "amount": 57439.65,
+          "count": 1106
         },
         "pinduoduo": {
-          "amount": 10585.03,
-          "count": 335
+          "amount": 8830.7,
+          "count": 280
         },
         "taobao": {
           "amount": 0,
@@ -87,17 +87,17 @@
     },
     "d30": {
       "total": {
-        "amount": 331553.73,
-        "count": 6785
+        "amount": 320528.91,
+        "count": 6561
       },
       "byPlatform": {
         "douyin": {
-          "amount": 280619.11,
-          "count": 5185
+          "amount": 271348.62,
+          "count": 5016
         },
         "pinduoduo": {
-          "amount": 50934.62,
-          "count": 1600
+          "amount": 49180.29,
+          "count": 1545
         },
         "taobao": {
           "amount": 0,
@@ -106,17 +106,17 @@
       },
       "prev": {
         "total": {
-          "amount": 11054.72,
-          "count": 225
+          "amount": 22109.44,
+          "count": 450
         },
         "byPlatform": {
           "douyin": {
-            "amount": 9300.39,
-            "count": 170
+            "amount": 18600.78,
+            "count": 340
           },
           "pinduoduo": {
-            "amount": 1754.33,
-            "count": 55
+            "amount": 3508.66,
+            "count": 110
           },
           "taobao": {
             "amount": 0,
@@ -131,29 +131,29 @@
       "name": "My",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 8072.1,
-      "count": 149
-    },
-    {
-      "name": "琪宝衣帽室",
-      "platform": "douyin",
-      "platformLabel": "抖店",
-      "amount": 1627.1,
-      "count": 29
-    },
-    {
-      "name": "3号店",
-      "platform": "douyin",
-      "platformLabel": "抖店",
-      "amount": 1208.5,
-      "count": 15
+      "amount": 29.9,
+      "count": 1
     },
     {
       "name": "My gir服装",
       "platform": "pinduoduo",
       "platformLabel": "拼多多",
-      "amount": 58.9,
-      "count": 1
+      "amount": 0,
+      "count": 0
+    },
+    {
+      "name": "3号店",
+      "platform": "douyin",
+      "platformLabel": "抖店",
+      "amount": 0,
+      "count": 0
+    },
+    {
+      "name": "琪宝衣帽室",
+      "platform": "douyin",
+      "platformLabel": "抖店",
+      "amount": 0,
+      "count": 0
     }
   ],
   "stores30": [
@@ -161,45 +161,45 @@
       "name": "My",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 111587.31,
-      "count": 1989
+      "amount": 108047.72,
+      "count": 1927
     },
     {
       "name": "琪宝衣帽室",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 102944.98,
-      "count": 1996
+      "amount": 99451.26,
+      "count": 1929
     },
     {
       "name": "3号店",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 66086.82,
-      "count": 1200
+      "amount": 63849.64,
+      "count": 1160
     },
     {
       "name": "My gir服装",
       "platform": "pinduoduo",
       "platformLabel": "拼多多",
-      "amount": 50934.62,
-      "count": 1600
+      "amount": 49180.29,
+      "count": 1545
     }
   ],
   "platformShare": [
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 280619.11,
-      "count": 5185,
-      "share": 84.6
+      "amount": 271348.62,
+      "count": 5016,
+      "share": 84.7
     },
     {
       "platform": "pinduoduo",
       "label": "拼多多",
-      "amount": 50934.62,
-      "count": 1600,
-      "share": 15.4
+      "amount": 49180.29,
+      "count": 1545,
+      "share": 15.3
     }
   ],
   "highlight": {
@@ -210,19 +210,13 @@
       "isEstimate": false
     },
     "worst": {
-      "date": "2026-08-16",
-      "amount": 10966.6,
+      "date": "2026-08-17",
+      "amount": 29.9,
       "estimateAmount": 0,
       "isEstimate": false
     }
   },
   "daily": [
-    {
-      "date": "2026-07-18",
-      "amount": 11054.72,
-      "estimateAmount": 0,
-      "isEstimate": false
-    },
     {
       "date": "2026-07-19",
       "amount": 11054.72,
@@ -394,6 +388,12 @@
     {
       "date": "2026-08-16",
       "amount": 10966.6,
+      "estimateAmount": 0,
+      "isEstimate": false
+    },
+    {
+      "date": "2026-08-17",
+      "amount": 29.9,
       "estimateAmount": 0,
       "isEstimate": false
     }
