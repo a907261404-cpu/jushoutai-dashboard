@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-08-16T18:19:42.769Z",
+  "updatedAt": "2026-08-16T18:29:44.959Z",
   "today": "2026-08-17",
   "range7": "2026-08-11 ~ 2026-08-17",
   "range30": "2026-07-19 ~ 2026-08-17",
   "platforms": {
     "today": {
       "total": {
-        "amount": 808.6,
-        "count": 14
+        "amount": 888.5,
+        "count": 15
       },
       "byPlatform": {
         "douyin": {
-          "amount": 808.6,
-          "count": 14
+          "amount": 888.5,
+          "count": 15
         },
         "pinduoduo": {
           "amount": 0,
@@ -47,13 +47,13 @@
     },
     "d7": {
       "total": {
-        "amount": 67049.05,
-        "count": 1399
+        "amount": 67128.95,
+        "count": 1400
       },
       "byPlatform": {
         "douyin": {
-          "amount": 58218.35,
-          "count": 1119
+          "amount": 58298.25,
+          "count": 1120
         },
         "pinduoduo": {
           "amount": 8830.7,
@@ -87,13 +87,13 @@
     },
     "d30": {
       "total": {
-        "amount": 321307.61,
-        "count": 6574
+        "amount": 321387.51,
+        "count": 6575
       },
       "byPlatform": {
         "douyin": {
-          "amount": 272127.32,
-          "count": 5029
+          "amount": 272207.22,
+          "count": 5030
         },
         "pinduoduo": {
           "amount": 49180.29,
@@ -138,8 +138,8 @@
       "name": "3号店",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 89.9,
-      "count": 1
+      "amount": 169.8,
+      "count": 2
     },
     {
       "name": "My gir服装",
@@ -175,8 +175,8 @@
       "name": "3号店",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 63939.54,
-      "count": 1161
+      "amount": 64019.44,
+      "count": 1162
     },
     {
       "name": "My gir服装",
@@ -190,8 +190,8 @@
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 272127.32,
-      "count": 5029,
+      "amount": 272207.22,
+      "count": 5030,
       "share": 84.7
     },
     {
@@ -211,7 +211,7 @@
     },
     "worst": {
       "date": "2026-08-17",
-      "amount": 808.6,
+      "amount": 888.5,
       "estimateAmount": 0,
       "isEstimate": false
     }
@@ -393,7 +393,7 @@
     },
     {
       "date": "2026-08-17",
-      "amount": 808.6,
+      "amount": 888.5,
       "estimateAmount": 0,
       "isEstimate": false
     }
