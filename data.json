@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-08-16T10:09:17.074Z",
+  "updatedAt": "2026-08-16T10:18:14.014Z",
   "today": "2026-08-16",
   "range7": "2026-08-10 ~ 2026-08-16",
   "range30": "2026-07-18 ~ 2026-08-16",
   "platforms": {
     "today": {
       "total": {
-        "amount": 7396,
-        "count": 130
+        "amount": 7475.9,
+        "count": 131
       },
       "byPlatform": {
         "douyin": {
-          "amount": 7337.1,
-          "count": 129
+          "amount": 7417,
+          "count": 130
         },
         "pinduoduo": {
           "amount": 58.9,
@@ -27,13 +27,13 @@
     },
     "d7": {
       "total": {
-        "amount": 7396,
-        "count": 130
+        "amount": 7475.9,
+        "count": 131
       },
       "byPlatform": {
         "douyin": {
-          "amount": 7337.1,
-          "count": 129
+          "amount": 7417,
+          "count": 130
         },
         "pinduoduo": {
           "amount": 58.9,
@@ -47,13 +47,13 @@
     },
     "d30": {
       "total": {
-        "amount": 7396,
-        "count": 130
+        "amount": 7475.9,
+        "count": 131
       },
       "byPlatform": {
         "douyin": {
-          "amount": 7337.1,
-          "count": 129
+          "amount": 7417,
+          "count": 130
         },
         "pinduoduo": {
           "amount": 58.9,
@@ -78,8 +78,8 @@
       "name": "抖店店铺 3",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 1227.7,
-      "count": 23
+      "amount": 1307.6,
+      "count": 24
     },
     {
       "name": "3号店",
@@ -215,7 +215,7 @@
     },
     {
       "date": "2026-08-16",
-      "amount": 7396
+      "amount": 7475.9
     }
   ]
 }
