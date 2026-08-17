@@ -541,7 +541,7 @@
   },
   "profit": {
     "schemaVersion": 3,
-    "generatedAt": "2026-08-17T10:03:30.187Z",
+    "generatedAt": "2026-08-17T10:10:00.064Z",
     "latestDate": "2026-08-17",
     "settings": {
       "shippingMode": "per_order",
