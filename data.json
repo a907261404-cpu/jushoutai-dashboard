@@ -541,7 +541,7 @@
   },
   "profit": {
     "schemaVersion": 3,
-    "generatedAt": "2026-08-17T12:04:17.740Z",
+    "generatedAt": "2026-08-17T12:04:50.515Z",
     "latestDate": "2026-08-17",
     "settings": {
       "shippingMode": "per_order",
@@ -969,9 +969,9 @@
   "profitError": null,
   "costInitialization": {
     "rate": 0.6,
-    "appliedAt": "2026-08-17T11:43:56.520Z",
-    "seededCount": 75,
-    "skippedCount": 697,
-    "rule": "同款归类后,去尺码成本规格最低售价 × 60%"
+    "appliedAt": "2026-08-17T12:04:42.133Z",
+    "seededCount": 0,
+    "skippedCount": 780,
+    "rule": "去尺码成本规格售价 × 60%"
   }
 }
