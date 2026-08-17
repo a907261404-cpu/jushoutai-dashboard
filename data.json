@@ -541,7 +541,7 @@
   },
   "profit": {
     "schemaVersion": 3,
-    "generatedAt": "2026-08-17T12:10:28.028Z",
+    "generatedAt": "2026-08-17T12:20:23.945Z",
     "latestDate": "2026-08-17",
     "settings": {
       "shippingMode": "per_order",
@@ -566,6 +566,7 @@
         "shippingCost": 0,
         "grossProfit": null,
         "grossMargin": null,
+        "profitBasis": "none",
         "status": "missing_orders",
         "exact": false,
         "byStore": [
@@ -585,6 +586,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
+            "profitBasis": "none",
             "status": "missing_orders"
           },
           {
@@ -603,6 +605,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
+            "profitBasis": "none",
             "status": "missing_orders"
           },
           {
@@ -621,6 +624,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
+            "profitBasis": "none",
             "status": "missing_orders"
           },
           {
@@ -639,6 +643,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
+            "profitBasis": "none",
             "status": "no_sales"
           }
         ]
@@ -657,8 +662,9 @@
         "capturedRevenue": 1375.5,
         "productCost": 664.56,
         "shippingCost": 72,
-        "grossProfit": null,
-        "grossMargin": null,
+        "grossProfit": 638.94,
+        "grossMargin": 46.5,
+        "profitBasis": "estimated",
         "status": "missing_orders",
         "exact": false,
         "byStore": [
@@ -676,8 +682,9 @@
             "productCost": 275.46,
             "shippingCost": 27,
             "capturedRevenue": 459.1,
-            "grossProfit": null,
-            "grossMargin": null,
+            "grossProfit": 156.64,
+            "grossMargin": 34.1,
+            "profitBasis": "estimated",
             "status": "missing_orders"
           },
           {
@@ -694,8 +701,9 @@
             "productCost": 131.58,
             "shippingCost": 21,
             "capturedRevenue": 237.3,
-            "grossProfit": null,
-            "grossMargin": null,
+            "grossProfit": 84.72,
+            "grossMargin": 35.7,
+            "profitBasis": "estimated",
             "status": "missing_orders"
           },
           {
@@ -712,8 +720,9 @@
             "productCost": 257.52,
             "shippingCost": 24,
             "capturedRevenue": 679.1,
-            "grossProfit": null,
-            "grossMargin": null,
+            "grossProfit": 397.58,
+            "grossMargin": 58.5,
+            "profitBasis": "estimated",
             "status": "order_mismatch"
           },
           {
@@ -732,6 +741,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
+            "profitBasis": "none",
             "status": "missing_orders"
           }
         ]
@@ -750,8 +760,9 @@
         "capturedRevenue": 2801.61,
         "productCost": 1462.44,
         "shippingCost": 174,
-        "grossProfit": null,
-        "grossMargin": null,
+        "grossProfit": 1165.17,
+        "grossMargin": 41.6,
+        "profitBasis": "estimated",
         "status": "missing_orders",
         "exact": false,
         "byStore": [
@@ -769,8 +780,9 @@
             "productCost": 568.86,
             "shippingCost": 57,
             "capturedRevenue": 1018.1,
-            "grossProfit": null,
-            "grossMargin": null,
+            "grossProfit": 392.24,
+            "grossMargin": 38.5,
+            "profitBasis": "estimated",
             "status": "missing_orders"
           },
           {
@@ -787,8 +799,9 @@
             "productCost": 131.58,
             "shippingCost": 21,
             "capturedRevenue": 237.3,
-            "grossProfit": null,
-            "grossMargin": null,
+            "grossProfit": 84.72,
+            "grossMargin": 35.7,
+            "profitBasis": "estimated",
             "status": "missing_orders"
           },
           {
@@ -805,8 +818,9 @@
             "productCost": 257.52,
             "shippingCost": 24,
             "capturedRevenue": 679.1,
-            "grossProfit": null,
-            "grossMargin": null,
+            "grossProfit": 397.58,
+            "grossMargin": 58.5,
+            "profitBasis": "estimated",
             "status": "order_mismatch"
           },
           {
@@ -823,8 +837,9 @@
             "productCost": 504.48,
             "shippingCost": 72,
             "capturedRevenue": 867.11,
-            "grossProfit": null,
-            "grossMargin": null,
+            "grossProfit": 290.63,
+            "grossMargin": 33.5,
+            "profitBasis": "estimated",
             "status": "order_mismatch"
           }
         ]
@@ -845,8 +860,9 @@
         "capturedRevenue": 447,
         "productCost": 191.46,
         "shippingCost": 27,
-        "grossProfit": null,
-        "grossMargin": null,
+        "grossProfit": 228.54,
+        "grossMargin": 51.1,
+        "profitBasis": "estimated",
         "status": "order_mismatch",
         "exact": false,
         "byStore": [
@@ -866,6 +882,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
+            "profitBasis": "none",
             "status": "missing_orders"
           }
         ]
@@ -886,6 +903,7 @@
         "shippingCost": 0,
         "grossProfit": null,
         "grossMargin": null,
+        "profitBasis": "none",
         "status": "missing_orders",
         "exact": false,
         "byStore": [
@@ -905,6 +923,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
+            "profitBasis": "none",
             "status": "missing_orders"
           },
           {
@@ -923,6 +942,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
+            "profitBasis": "none",
             "status": "missing_orders"
           },
           {
@@ -941,6 +961,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
+            "profitBasis": "none",
             "status": "missing_orders"
           },
           {
@@ -959,6 +980,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
+            "profitBasis": "none",
             "status": "no_sales"
           }
         ]
