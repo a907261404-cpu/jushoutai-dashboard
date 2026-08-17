@@ -537,11 +537,11 @@
     "coverage": 10,
     "capturedStoreDays": 12,
     "expectedStoreDays": 120,
-    "syncedAt": "2026-08-17T11:01:38.997Z"
+    "syncedAt": "2026-08-17T11:10:20.335Z"
   },
   "profit": {
     "schemaVersion": 3,
-    "generatedAt": "2026-08-17T11:05:00.338Z",
+    "generatedAt": "2026-08-17T11:10:35.857Z",
     "latestDate": "2026-08-17",
     "settings": {
       "shippingMode": "per_order",
