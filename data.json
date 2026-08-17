@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-08-17T08:42:52.683Z",
+  "updatedAt": "2026-08-17T08:52:52.337Z",
   "today": "2026-08-17",
   "range7": "2026-08-11 ~ 2026-08-17",
   "range30": "2026-07-19 ~ 2026-08-17",
   "platforms": {
     "today": {
       "total": {
-        "amount": 4691.6,
-        "count": 84
+        "amount": 4721.5,
+        "count": 85
       },
       "byPlatform": {
         "douyin": {
-          "amount": 4691.6,
-          "count": 84
+          "amount": 4721.5,
+          "count": 85
         },
         "pinduoduo": {
           "amount": 0,
@@ -47,13 +47,13 @@
     },
     "d7": {
       "total": {
-        "amount": 6398.5,
-        "count": 115
+        "amount": 6428.4,
+        "count": 116
       },
       "byPlatform": {
         "douyin": {
-          "amount": 6398.5,
-          "count": 115
+          "amount": 6428.4,
+          "count": 116
         },
         "pinduoduo": {
           "amount": 0,
@@ -87,13 +87,13 @@
     },
     "d30": {
       "total": {
-        "amount": 6398.5,
-        "count": 115
+        "amount": 6428.4,
+        "count": 116
       },
       "byPlatform": {
         "douyin": {
-          "amount": 6398.5,
-          "count": 115
+          "amount": 6428.4,
+          "count": 116
         },
         "pinduoduo": {
           "amount": 0,
@@ -131,8 +131,8 @@
       "name": "My",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 3234.1,
-      "count": 59
+      "amount": 3264,
+      "count": 60
     },
     {
       "name": "琪宝衣帽室",
@@ -161,8 +161,8 @@
       "name": "My",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 4362.2,
-      "count": 78
+      "amount": 4392.1,
+      "count": 79
     },
     {
       "name": "琪宝衣帽室",
@@ -197,15 +197,15 @@
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 6398.5,
-      "count": 115,
+      "amount": 6428.4,
+      "count": 116,
       "share": 100
     }
   ],
   "highlight": {
     "best": {
       "date": "2026-08-17",
-      "amount": 4691.6,
+      "amount": 4721.5,
       "estimateAmount": 0,
       "isEstimate": false
     },
@@ -393,7 +393,7 @@
     },
     {
       "date": "2026-08-17",
-      "amount": 4691.6,
+      "amount": 4721.5,
       "estimateAmount": 0,
       "isEstimate": false
     }
