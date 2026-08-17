@@ -541,11 +541,11 @@
   },
   "profit": {
     "schemaVersion": 3,
-    "generatedAt": "2026-08-17T10:00:04.278Z",
+    "generatedAt": "2026-08-17T10:03:30.187Z",
     "latestDate": "2026-08-17",
     "settings": {
       "shippingMode": "per_order",
-      "defaultShippingCost": 0,
+      "defaultShippingCost": 3,
       "grossProfitWarnRate": 20
     },
     "hasAnyConfiguredCost": false,
