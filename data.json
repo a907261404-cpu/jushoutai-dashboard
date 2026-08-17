@@ -1,6 +1,6 @@
 {
   "error": null,
-  "updatedAt": "2026-08-17T11:44:32.282Z",
+  "updatedAt": "2026-08-17T11:51:27.632Z",
   "today": "2026-08-17",
   "range7": "2026-08-11 ~ 2026-08-17",
   "range30": "2026-07-19 ~ 2026-08-17",
@@ -541,7 +541,7 @@
   },
   "profit": {
     "schemaVersion": 3,
-    "generatedAt": "2026-08-17T11:44:32.868Z",
+    "generatedAt": "2026-08-17T11:51:28.225Z",
     "latestDate": "2026-08-17",
     "settings": {
       "shippingMode": "per_order",
@@ -972,6 +972,6 @@
     "appliedAt": "2026-08-17T11:43:56.520Z",
     "seededCount": 75,
     "skippedCount": 697,
-    "rule": "同款归类后，去尺码成本规格最低售价 × 60%"
+    "rule": "同款归类后,去尺码成本规格最低售价 × 60%"
   }
 }
