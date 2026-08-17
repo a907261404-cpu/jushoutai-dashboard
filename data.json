@@ -541,14 +541,14 @@
   },
   "profit": {
     "schemaVersion": 3,
-    "generatedAt": "2026-08-17T11:03:09.314Z",
+    "generatedAt": "2026-08-17T11:05:00.338Z",
     "latestDate": "2026-08-17",
     "settings": {
       "shippingMode": "per_order",
       "defaultShippingCost": 3,
       "grossProfitWarnRate": 20
     },
-    "hasAnyConfiguredCost": false,
+    "hasAnyConfiguredCost": true,
     "ranges": {
       "today": {
         "start": "2026-08-17",
@@ -566,7 +566,7 @@
         "shippingCost": 0,
         "grossProfit": null,
         "grossMargin": null,
-        "status": "missing_cost",
+        "status": "missing_orders",
         "exact": false,
         "byStore": [
           {
@@ -585,7 +585,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           },
           {
             "storeId": "douyin-ms8qkyfuxykk2",
@@ -603,7 +603,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           },
           {
             "storeId": "douyin-mrz3xz9kpxoex",
@@ -621,7 +621,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           },
           {
             "storeId": "pinduoduo",
@@ -650,16 +650,16 @@
         "expectedOrders": 123,
         "capturedOrders": 23,
         "productMatchedOrders": 23,
-        "costMatchedOrders": 0,
+        "costMatchedOrders": 23,
         "orderCoverage": 18.7,
         "productMatchCoverage": 100,
-        "costCoverage": 0,
+        "costCoverage": 100,
         "capturedRevenue": 1315.6,
-        "productCost": 0,
-        "shippingCost": 0,
+        "productCost": 616.62,
+        "shippingCost": 69,
         "grossProfit": null,
         "grossMargin": null,
-        "status": "missing_cost",
+        "status": "missing_orders",
         "exact": false,
         "byStore": [
           {
@@ -670,15 +670,15 @@
             "expectedOrders": 74,
             "capturedOrders": 9,
             "productMatchedOrders": 9,
-            "costMatchedOrders": 0,
+            "costMatchedOrders": 9,
             "orderCoverage": 12.2,
-            "costCoverage": 0,
-            "productCost": 0,
-            "shippingCost": 0,
+            "costCoverage": 100,
+            "productCost": 263.46,
+            "shippingCost": 27,
             "capturedRevenue": 459.1,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           },
           {
             "storeId": "douyin-ms8qkyfuxykk2",
@@ -688,15 +688,15 @@
             "expectedOrders": 31,
             "capturedOrders": 7,
             "productMatchedOrders": 7,
-            "costMatchedOrders": 0,
+            "costMatchedOrders": 7,
             "orderCoverage": 22.6,
-            "costCoverage": 0,
-            "productCost": 0,
-            "shippingCost": 0,
+            "costCoverage": 100,
+            "productCost": 131.58,
+            "shippingCost": 21,
             "capturedRevenue": 237.3,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           },
           {
             "storeId": "douyin-mrz3xz9kpxoex",
@@ -706,15 +706,15 @@
             "expectedOrders": 17,
             "capturedOrders": 7,
             "productMatchedOrders": 7,
-            "costMatchedOrders": 0,
+            "costMatchedOrders": 7,
             "orderCoverage": 41.2,
-            "costCoverage": 0,
-            "productCost": 0,
-            "shippingCost": 0,
+            "costCoverage": 100,
+            "productCost": 221.58,
+            "shippingCost": 21,
             "capturedRevenue": 619.2,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           },
           {
             "storeId": "pinduoduo",
@@ -732,7 +732,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           }
         ]
       },
@@ -743,16 +743,16 @@
         "expectedOrders": 123,
         "capturedOrders": 57,
         "productMatchedOrders": 57,
-        "costMatchedOrders": 0,
+        "costMatchedOrders": 57,
         "orderCoverage": 46.3,
         "productMatchCoverage": 100,
-        "costCoverage": 0,
+        "costCoverage": 100,
         "capturedRevenue": 2741.71,
-        "productCost": 0,
-        "shippingCost": 0,
+        "productCost": 1378.5,
+        "shippingCost": 171,
         "grossProfit": null,
         "grossMargin": null,
-        "status": "missing_cost",
+        "status": "missing_orders",
         "exact": false,
         "byStore": [
           {
@@ -763,15 +763,15 @@
             "expectedOrders": 74,
             "capturedOrders": 19,
             "productMatchedOrders": 19,
-            "costMatchedOrders": 0,
+            "costMatchedOrders": 19,
             "orderCoverage": 25.7,
-            "costCoverage": 0,
-            "productCost": 0,
-            "shippingCost": 0,
+            "costCoverage": 100,
+            "productCost": 520.86,
+            "shippingCost": 57,
             "capturedRevenue": 1018.1,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           },
           {
             "storeId": "douyin-ms8qkyfuxykk2",
@@ -781,15 +781,15 @@
             "expectedOrders": 31,
             "capturedOrders": 7,
             "productMatchedOrders": 7,
-            "costMatchedOrders": 0,
+            "costMatchedOrders": 7,
             "orderCoverage": 22.6,
-            "costCoverage": 0,
-            "productCost": 0,
-            "shippingCost": 0,
+            "costCoverage": 100,
+            "productCost": 131.58,
+            "shippingCost": 21,
             "capturedRevenue": 237.3,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           },
           {
             "storeId": "douyin-mrz3xz9kpxoex",
@@ -799,15 +799,15 @@
             "expectedOrders": 17,
             "capturedOrders": 7,
             "productMatchedOrders": 7,
-            "costMatchedOrders": 0,
+            "costMatchedOrders": 7,
             "orderCoverage": 41.2,
-            "costCoverage": 0,
-            "productCost": 0,
-            "shippingCost": 0,
+            "costCoverage": 100,
+            "productCost": 221.58,
+            "shippingCost": 21,
             "capturedRevenue": 619.2,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           },
           {
             "storeId": "pinduoduo",
@@ -817,15 +817,15 @@
             "expectedOrders": 1,
             "capturedOrders": 24,
             "productMatchedOrders": 24,
-            "costMatchedOrders": 0,
+            "costMatchedOrders": 24,
             "orderCoverage": 100,
-            "costCoverage": 0,
-            "productCost": 0,
-            "shippingCost": 0,
+            "costCoverage": 100,
+            "productCost": 504.48,
+            "shippingCost": 72,
             "capturedRevenue": 867.11,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "order_mismatch"
           }
         ]
       }
@@ -838,16 +838,16 @@
         "expectedOrders": 30,
         "capturedOrders": 5,
         "productMatchedOrders": 5,
-        "costMatchedOrders": 0,
+        "costMatchedOrders": 5,
         "orderCoverage": 16.7,
         "productMatchCoverage": 100,
-        "costCoverage": 0,
+        "costCoverage": 100,
         "capturedRevenue": 409.5,
-        "productCost": 0,
-        "shippingCost": 0,
+        "productCost": 161.7,
+        "shippingCost": 15,
         "grossProfit": null,
         "grossMargin": null,
-        "status": "missing_cost",
+        "status": "missing_orders",
         "exact": false,
         "byStore": [
           {
@@ -858,15 +858,15 @@
             "expectedOrders": 10,
             "capturedOrders": 5,
             "productMatchedOrders": 5,
-            "costMatchedOrders": 0,
+            "costMatchedOrders": 5,
             "orderCoverage": 50,
-            "costCoverage": 0,
-            "productCost": 0,
-            "shippingCost": 0,
+            "costCoverage": 100,
+            "productCost": 161.7,
+            "shippingCost": 15,
             "capturedRevenue": 409.5,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           },
           {
             "storeId": "douyin",
@@ -884,7 +884,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           },
           {
             "storeId": "douyin-ms8qkyfuxykk2",
@@ -902,7 +902,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           },
           {
             "storeId": "pinduoduo",
@@ -920,7 +920,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           }
         ]
       },
@@ -931,16 +931,16 @@
         "expectedOrders": 31,
         "capturedOrders": 9,
         "productMatchedOrders": 9,
-        "costMatchedOrders": 0,
+        "costMatchedOrders": 9,
         "orderCoverage": 29,
         "productMatchCoverage": 100,
-        "costCoverage": 0,
+        "costCoverage": 100,
         "capturedRevenue": 447,
-        "productCost": 0,
-        "shippingCost": 0,
+        "productCost": 191.46,
+        "shippingCost": 27,
         "grossProfit": null,
         "grossMargin": null,
-        "status": "missing_cost",
+        "status": "missing_orders",
         "exact": false,
         "byStore": [
           {
@@ -959,7 +959,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           },
           {
             "storeId": "douyin-ms8qkyfuxykk2",
@@ -969,15 +969,15 @@
             "expectedOrders": 9,
             "capturedOrders": 7,
             "productMatchedOrders": 7,
-            "costMatchedOrders": 0,
+            "costMatchedOrders": 7,
             "orderCoverage": 77.8,
-            "costCoverage": 0,
-            "productCost": 0,
-            "shippingCost": 0,
+            "costCoverage": 100,
+            "productCost": 131.58,
+            "shippingCost": 21,
             "capturedRevenue": 237.3,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           },
           {
             "storeId": "douyin-mrz3xz9kpxoex",
@@ -987,15 +987,15 @@
             "expectedOrders": 3,
             "capturedOrders": 2,
             "productMatchedOrders": 2,
-            "costMatchedOrders": 0,
+            "costMatchedOrders": 2,
             "orderCoverage": 66.7,
-            "costCoverage": 0,
-            "productCost": 0,
-            "shippingCost": 0,
+            "costCoverage": 100,
+            "productCost": 59.88,
+            "shippingCost": 6,
             "capturedRevenue": 209.7,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           },
           {
             "storeId": "pinduoduo",
@@ -1033,7 +1033,7 @@
         "shippingCost": 0,
         "grossProfit": null,
         "grossMargin": null,
-        "status": "missing_cost",
+        "status": "missing_orders",
         "exact": false,
         "byStore": [
           {
@@ -1052,7 +1052,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           },
           {
             "storeId": "douyin-ms8qkyfuxykk2",
@@ -1070,7 +1070,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           },
           {
             "storeId": "douyin-mrz3xz9kpxoex",
@@ -1088,7 +1088,7 @@
             "capturedRevenue": 0,
             "grossProfit": null,
             "grossMargin": null,
-            "status": "missing_cost"
+            "status": "missing_orders"
           },
           {
             "storeId": "pinduoduo",
@@ -1114,5 +1114,11 @@
     "unmatchedOrderCount": 4
   },
   "profitError": null,
-  "costInitialization": null
+  "costInitialization": {
+    "rate": 0.6,
+    "appliedAt": "2026-08-17T11:04:50.977Z",
+    "seededCount": 986,
+    "skippedCount": 9,
+    "rule": "去尺码成本规格售价 × 60%"
+  }
 }
