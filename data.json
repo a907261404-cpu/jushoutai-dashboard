@@ -59,17 +59,17 @@
     },
     "d7": {
       "total": {
-        "amount": 7619.4,
-        "count": 146
+        "amount": 62893.25,
+        "count": 1337
       },
       "byPlatform": {
         "douyin": {
-          "amount": 7560.5,
-          "count": 145
+          "amount": 54062.55,
+          "count": 1057
         },
         "pinduoduo": {
-          "amount": 58.9,
-          "count": 1
+          "amount": 8830.7,
+          "count": 280
         },
         "taobao": {
           "amount": 0,
@@ -78,23 +78,23 @@
       },
       "coverage": {
         "expected": 28,
-        "captured": 5,
+        "captured": 25,
         "complete": false,
-        "percentage": 17.9
+        "percentage": 89.3
       },
       "prev": {
         "total": {
-          "amount": 0,
-          "count": 0
+          "amount": 77383.04,
+          "count": 1575
         },
         "byPlatform": {
           "douyin": {
-            "amount": 0,
-            "count": 0
+            "amount": 65102.73,
+            "count": 1190
           },
           "pinduoduo": {
-            "amount": 0,
-            "count": 0
+            "amount": 12280.31,
+            "count": 385
           },
           "taobao": {
             "amount": 0,
@@ -103,25 +103,25 @@
         },
         "coverage": {
           "expected": 28,
-          "captured": 0,
-          "complete": false,
-          "percentage": 0
+          "captured": 28,
+          "complete": true,
+          "percentage": 100
         }
       }
     },
     "d30": {
       "total": {
-        "amount": 7619.4,
-        "count": 146
+        "amount": 317151.81,
+        "count": 6512
       },
       "byPlatform": {
         "douyin": {
-          "amount": 7560.5,
-          "count": 145
+          "amount": 267971.52,
+          "count": 4967
         },
         "pinduoduo": {
-          "amount": 58.9,
-          "count": 1
+          "amount": 49180.29,
+          "count": 1545
         },
         "taobao": {
           "amount": 0,
@@ -130,23 +130,23 @@
       },
       "coverage": {
         "expected": 120,
-        "captured": 5,
+        "captured": 117,
         "complete": false,
-        "percentage": 4.2
+        "percentage": 97.5
       },
       "prev": {
         "total": {
-          "amount": 0,
-          "count": 0
+          "amount": 22109.44,
+          "count": 450
         },
         "byPlatform": {
           "douyin": {
-            "amount": 0,
-            "count": 0
+            "amount": 18600.78,
+            "count": 340
           },
           "pinduoduo": {
-            "amount": 0,
-            "count": 0
+            "amount": 3508.66,
+            "count": 110
           },
           "taobao": {
             "amount": 0,
@@ -155,9 +155,9 @@
         },
         "coverage": {
           "expected": 120,
-          "captured": 0,
+          "captured": 8,
           "complete": false,
-          "percentage": 0
+          "percentage": 6.7
         }
       }
     }
@@ -197,53 +197,53 @@
       "name": "My",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 4811.1,
-      "count": 89
+      "amount": 104756.82,
+      "count": 1866
     },
     {
       "name": "琪宝衣帽室",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 2280,
-      "count": 50
+      "amount": 100104.16,
+      "count": 1950
     },
     {
       "name": "3号店",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 469.4,
-      "count": 6
+      "amount": 63110.54,
+      "count": 1151
     },
     {
       "name": "My gir服装",
       "platform": "pinduoduo",
       "platformLabel": "拼多多",
-      "amount": 58.9,
-      "count": 1
+      "amount": 49180.29,
+      "count": 1545
     }
   ],
   "platformShare": [
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 7560.5,
-      "count": 145,
-      "share": 99.2
+      "amount": 267971.52,
+      "count": 4967,
+      "share": 84.5
     },
     {
       "platform": "pinduoduo",
       "label": "拼多多",
-      "amount": 58.9,
-      "count": 1,
-      "share": 0.8
+      "amount": 49180.29,
+      "count": 1545,
+      "share": 15.5
     }
   ],
   "highlight": {
     "best": {
-      "date": "2026-08-17",
-      "amount": 7560.5,
-      "estimateAmount": 0,
-      "isEstimate": false,
+      "date": "2026-08-15",
+      "amount": 11054.97,
+      "estimateAmount": 11054.97,
+      "isEstimate": true,
       "complete": true,
       "capturedStores": 4,
       "expectedStores": 4
@@ -261,254 +261,254 @@
   "daily": [
     {
       "date": "2026-07-19",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-07-20",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-07-21",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-07-22",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-07-23",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-07-24",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-07-25",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-07-26",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-07-27",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-07-28",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-07-29",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-07-30",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-07-31",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-08-01",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-08-02",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-08-03",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-08-04",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-08-05",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-08-06",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-08-07",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-08-08",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-08-09",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-08-10",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-08-11",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-08-12",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-08-13",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-08-14",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.72,
+      "estimateAmount": 11054.72,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
       "date": "2026-08-15",
-      "amount": 0,
-      "estimateAmount": 0,
-      "isEstimate": false,
-      "complete": false,
-      "capturedStores": 0,
+      "amount": 11054.97,
+      "estimateAmount": 11054.97,
+      "isEstimate": true,
+      "complete": true,
+      "capturedStores": 4,
       "expectedStores": 4
     },
     {
@@ -534,8 +534,8 @@
     "start": "2026-07-19",
     "end": "2026-08-17",
     "complete": false,
-    "coverage": 4.2,
-    "capturedStoreDays": 5,
+    "coverage": 97.5,
+    "capturedStoreDays": 117,
     "expectedStoreDays": 120,
     "syncedAt": "2026-08-17T12:36:03.299Z"
   },
@@ -557,26 +557,26 @@
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 7619.4,
-        "productCost": 4571.64,
+        "revenue": 62893.25,
+        "productCost": 37735.95,
         "shippingCost": 0,
-        "grossProfit": 3047.76,
+        "grossProfit": 25157.3,
         "grossMargin": 40,
-        "capturedOrders": 146,
-        "expectedOrders": 146,
+        "capturedOrders": 1337,
+        "expectedOrders": 1337,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 7619.4,
-        "productCost": 4571.64,
+        "revenue": 317151.81,
+        "productCost": 190291.09,
         "shippingCost": 0,
-        "grossProfit": 3047.76,
+        "grossProfit": 126860.72,
         "grossMargin": 40,
-        "capturedOrders": 146,
-        "expectedOrders": 146,
+        "capturedOrders": 6512,
+        "expectedOrders": 6512,
         "orderCoverage": 100,
         "costCoverage": 100
       }
