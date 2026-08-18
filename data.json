@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-08-18T01:30:58.995Z",
+  "updatedAt": "2026-08-18T01:50:58.073Z",
   "today": "2026-08-18",
   "range7": "2026-08-12 ~ 2026-08-18",
   "range30": "2026-07-20 ~ 2026-08-18",
   "platforms": {
     "today": {
       "total": {
-        "amount": 1766.8,
-        "count": 32
+        "amount": 1926.5,
+        "count": 35
       },
       "byPlatform": {
         "douyin": {
-          "amount": 1766.8,
-          "count": 32
+          "amount": 1926.5,
+          "count": 35
         },
         "pinduoduo": {
           "amount": 0,
@@ -59,13 +59,13 @@
     },
     "d7": {
       "total": {
-        "amount": 75748.27,
-        "count": 1728
+        "amount": 75907.97,
+        "count": 1731
       },
       "byPlatform": {
         "douyin": {
-          "amount": 68671.9,
-          "count": 1503
+          "amount": 68831.6,
+          "count": 1506
         },
         "pinduoduo": {
           "amount": 7076.37,
@@ -111,13 +111,13 @@
     },
     "d30": {
       "total": {
-        "amount": 330006.83,
-        "count": 6903
+        "amount": 330166.53,
+        "count": 6906
       },
       "byPlatform": {
         "douyin": {
-          "amount": 282580.87,
-          "count": 5413
+          "amount": 282740.57,
+          "count": 5416
         },
         "pinduoduo": {
           "amount": 47425.96,
@@ -167,8 +167,8 @@
       "name": "My",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 998,
-      "count": 20
+      "amount": 1117.8,
+      "count": 22
     },
     {
       "name": "琪宝衣帽室",
@@ -181,8 +181,8 @@
       "name": "3号店",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 249.7,
-      "count": 3
+      "amount": 289.6,
+      "count": 4
     },
     {
       "name": "My gir服装",
@@ -204,15 +204,15 @@
       "name": "My",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 107353.39,
-      "count": 1928
+      "amount": 107473.19,
+      "count": 1930
     },
     {
       "name": "3号店",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 63512.16,
-      "count": 1182
+      "amount": 63552.06,
+      "count": 1183
     },
     {
       "name": "My gir服装",
@@ -226,8 +226,8 @@
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 282580.87,
-      "count": 5413,
+      "amount": 282740.57,
+      "count": 5416,
       "share": 85.6
     },
     {
@@ -250,7 +250,7 @@
     },
     "worst": {
       "date": "2026-08-18",
-      "amount": 1766.8,
+      "amount": 1926.5,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": true,
@@ -522,7 +522,7 @@
     },
     {
       "date": "2026-08-18",
-      "amount": 1766.8,
+      "amount": 1926.5,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": true,
@@ -544,39 +544,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 1766.8,
-        "productCost": 1060.08,
+        "revenue": 1926.5,
+        "productCost": 1155.9,
         "shippingCost": 0,
-        "grossProfit": 706.72,
+        "grossProfit": 770.6,
         "grossMargin": 40,
-        "capturedOrders": 32,
-        "expectedOrders": 32,
+        "capturedOrders": 35,
+        "expectedOrders": 35,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 75748.27,
-        "productCost": 45448.96,
+        "revenue": 75907.97,
+        "productCost": 45544.78,
         "shippingCost": 0,
-        "grossProfit": 30299.31,
+        "grossProfit": 30363.19,
         "grossMargin": 40,
-        "capturedOrders": 1728,
-        "expectedOrders": 1728,
+        "capturedOrders": 1731,
+        "expectedOrders": 1731,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 330006.83,
-        "productCost": 198004.1,
+        "revenue": 330166.53,
+        "productCost": 198099.92,
         "shippingCost": 0,
-        "grossProfit": 132002.73,
+        "grossProfit": 132066.61,
         "grossMargin": 40,
-        "capturedOrders": 6903,
-        "expectedOrders": 6903,
+        "capturedOrders": 6906,
+        "expectedOrders": 6906,
         "orderCoverage": 100,
         "costCoverage": 100
       }
