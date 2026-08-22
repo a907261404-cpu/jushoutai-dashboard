@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-08-22T01:06:28.633Z",
+  "updatedAt": "2026-08-22T01:26:28.886Z",
   "today": "2026-08-22",
   "range7": "2026-08-16 ~ 2026-08-22",
   "range30": "2026-07-24 ~ 2026-08-22",
   "platforms": {
     "today": {
       "total": {
-        "amount": 2254.2,
-        "count": 38
+        "amount": 2374,
+        "count": 40
       },
       "byPlatform": {
         "douyin": {
-          "amount": 2254.2,
-          "count": 38
+          "amount": 2374,
+          "count": 40
         },
         "pinduoduo": {
           "amount": 0,
@@ -59,13 +59,13 @@
     },
     "d7": {
       "total": {
-        "amount": 75394.5,
-        "count": 1630
+        "amount": 75514.3,
+        "count": 1632
       },
       "byPlatform": {
         "douyin": {
-          "amount": 73616.14,
-          "count": 1570
+          "amount": 73735.94,
+          "count": 1572
         },
         "pinduoduo": {
           "amount": 1778.36,
@@ -111,13 +111,13 @@
     },
     "d30": {
       "total": {
-        "amount": 329653.31,
-        "count": 6871
+        "amount": 329773.11,
+        "count": 6873
       },
       "byPlatform": {
         "douyin": {
-          "amount": 287525.21,
-          "count": 5542
+          "amount": 287645.01,
+          "count": 5544
         },
         "pinduoduo": {
           "amount": 42128.1,
@@ -167,8 +167,8 @@
       "name": "My",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 1854.8,
-      "count": 32
+      "amount": 1974.6,
+      "count": 34
     },
     {
       "name": "琪宝衣帽室",
@@ -204,8 +204,8 @@
       "name": "My",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 121067.53,
-      "count": 2165
+      "amount": 121187.33,
+      "count": 2167
     },
     {
       "name": "琪宝衣帽室",
@@ -240,8 +240,8 @@
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 287525.21,
-      "count": 5542,
+      "amount": 287645.01,
+      "count": 5544,
       "share": 87.2
     },
     {
@@ -264,7 +264,7 @@
     },
     "worst": {
       "date": "2026-08-22",
-      "amount": 2254.2,
+      "amount": 2374,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": true,
@@ -536,7 +536,7 @@
     },
     {
       "date": "2026-08-22",
-      "amount": 2254.2,
+      "amount": 2374,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": true,
@@ -558,39 +558,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 2254.2,
-        "productCost": 1352.52,
+        "revenue": 2374,
+        "productCost": 1424.4,
         "shippingCost": 0,
-        "grossProfit": 901.68,
+        "grossProfit": 949.6,
         "grossMargin": 40,
-        "capturedOrders": 38,
-        "expectedOrders": 38,
+        "capturedOrders": 40,
+        "expectedOrders": 40,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 75394.5,
-        "productCost": 45236.7,
+        "revenue": 75514.3,
+        "productCost": 45308.58,
         "shippingCost": 0,
-        "grossProfit": 30157.8,
+        "grossProfit": 30205.72,
         "grossMargin": 40,
-        "capturedOrders": 1630,
-        "expectedOrders": 1630,
+        "capturedOrders": 1632,
+        "expectedOrders": 1632,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 329653.31,
-        "productCost": 197791.99,
+        "revenue": 329773.11,
+        "productCost": 197863.87,
         "shippingCost": 0,
-        "grossProfit": 131861.32,
+        "grossProfit": 131909.24,
         "grossMargin": 40,
-        "capturedOrders": 6871,
-        "expectedOrders": 6871,
+        "capturedOrders": 6873,
+        "expectedOrders": 6873,
         "orderCoverage": 100,
         "costCoverage": 100
       }
