@@ -545,13 +545,13 @@
     }
   ],
   "salesHistory": {
-    "start": "2026-07-24",
-    "end": "2026-08-22",
+    "start": "2026-07-25",
+    "end": "2026-08-23",
     "complete": true,
     "coverage": 100,
     "capturedStoreDays": 150,
     "expectedStoreDays": 150,
-    "syncedAt": "2026-08-21T21:21:15.437Z"
+    "syncedAt": "2026-08-22T21:21:18.545Z"
   },
   "profit": {
     "ranges": {
