@@ -1,6 +1,6 @@
 {
   "error": null,
-  "updatedAt": "2026-08-23T18:33:43.681Z",
+  "updatedAt": "2026-08-23T18:34:06.357Z",
   "today": "2026-08-24",
   "range7": "2026-08-18 ~ 2026-08-24",
   "range30": "2026-07-26 ~ 2026-08-24",
@@ -545,13 +545,13 @@
     }
   ],
   "salesHistory": {
-    "start": "2026-07-25",
-    "end": "2026-08-23",
+    "start": "2026-07-26",
+    "end": "2026-08-24",
     "complete": true,
     "coverage": 100,
     "capturedStoreDays": 150,
     "expectedStoreDays": 150,
-    "syncedAt": "2026-08-22T21:21:18.545Z"
+    "syncedAt": "2026-08-23T18:35:31.065Z"
   },
   "profit": {
     "ranges": {
