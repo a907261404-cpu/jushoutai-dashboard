@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-08-25T17:53:47.123Z",
+  "updatedAt": "2026-08-25T18:13:48.249Z",
   "today": "2026-08-26",
   "range7": "2026-08-20 ~ 2026-08-26",
   "range30": "2026-07-28 ~ 2026-08-26",
   "platforms": {
     "today": {
       "total": {
-        "amount": 879.3,
-        "count": 17
+        "amount": 1009.1,
+        "count": 19
       },
       "byPlatform": {
         "douyin": {
-          "amount": 879.3,
-          "count": 17
+          "amount": 1009.1,
+          "count": 19
         },
         "pinduoduo": {
           "amount": 0,
@@ -59,13 +59,13 @@
     },
     "d7": {
       "total": {
-        "amount": 74715.6,
-        "count": 1426
+        "amount": 74845.4,
+        "count": 1428
       },
       "byPlatform": {
         "douyin": {
-          "amount": 74681.9,
-          "count": 1425
+          "amount": 74811.7,
+          "count": 1427
         },
         "pinduoduo": {
           "amount": 33.7,
@@ -111,13 +111,13 @@
     },
     "d30": {
       "total": {
-        "amount": 337891.03,
-        "count": 7017
+        "amount": 338020.83,
+        "count": 7019
       },
       "byPlatform": {
         "douyin": {
-          "amount": 302746.55,
-          "count": 5907
+          "amount": 302876.35,
+          "count": 5909
         },
         "pinduoduo": {
           "amount": 35144.48,
@@ -167,8 +167,8 @@
       "name": "My",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 478.2,
-      "count": 8
+      "amount": 518.1,
+      "count": 9
     },
     {
       "name": "琪宝衣帽室",
@@ -181,8 +181,8 @@
       "name": "3号店",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 49.9,
-      "count": 1
+      "amount": 139.8,
+      "count": 2
     },
     {
       "name": "My gir服装",
@@ -204,8 +204,8 @@
       "name": "My",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 132870.17,
-      "count": 2376
+      "amount": 132910.07,
+      "count": 2377
     },
     {
       "name": "琪宝衣帽室",
@@ -218,8 +218,8 @@
       "name": "3号店",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 51287.02,
-      "count": 939
+      "amount": 51376.92,
+      "count": 940
     },
     {
       "name": "My gir服装",
@@ -240,8 +240,8 @@
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 302746.55,
-      "count": 5907,
+      "amount": 302876.35,
+      "count": 5909,
       "share": 89.6
     },
     {
@@ -517,7 +517,7 @@
     },
     {
       "date": "2026-08-26",
-      "amount": 879.3,
+      "amount": 1009.1,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": false,
@@ -539,39 +539,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 879.3,
-        "productCost": 527.58,
+        "revenue": 1009.1,
+        "productCost": 605.46,
         "shippingCost": 0,
-        "grossProfit": 351.72,
+        "grossProfit": 403.64,
         "grossMargin": 40,
-        "capturedOrders": 17,
-        "expectedOrders": 17,
+        "capturedOrders": 19,
+        "expectedOrders": 19,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 74715.6,
-        "productCost": 44829.36,
+        "revenue": 74845.4,
+        "productCost": 44907.24,
         "shippingCost": 0,
-        "grossProfit": 29886.24,
+        "grossProfit": 29938.16,
         "grossMargin": 40,
-        "capturedOrders": 1426,
-        "expectedOrders": 1426,
+        "capturedOrders": 1428,
+        "expectedOrders": 1428,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 337891.03,
-        "productCost": 202734.62,
+        "revenue": 338020.83,
+        "productCost": 202812.5,
         "shippingCost": 0,
-        "grossProfit": 135156.41,
+        "grossProfit": 135208.33,
         "grossMargin": 40,
-        "capturedOrders": 7017,
-        "expectedOrders": 7017,
+        "capturedOrders": 7019,
+        "expectedOrders": 7019,
         "orderCoverage": 100,
         "costCoverage": 100
       }
