@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-08-26T16:28:58.715Z",
+  "updatedAt": "2026-08-26T16:38:58.319Z",
   "today": "2026-08-27",
   "range7": "2026-08-21 ~ 2026-08-27",
   "range30": "2026-07-29 ~ 2026-08-27",
   "platforms": {
     "today": {
       "total": {
-        "amount": 1348.9,
-        "count": 50
+        "amount": 1468.7,
+        "count": 52
       },
       "byPlatform": {
         "douyin": {
-          "amount": 1348.9,
-          "count": 50
+          "amount": 1468.7,
+          "count": 52
         },
         "pinduoduo": {
           "amount": 0,
@@ -59,13 +59,13 @@
     },
     "d7": {
       "total": {
-        "amount": 78308.62,
-        "count": 1589
+        "amount": 78428.42,
+        "count": 1591
       },
       "byPlatform": {
         "douyin": {
-          "amount": 78274.92,
-          "count": 1588
+          "amount": 78394.72,
+          "count": 1590
         },
         "pinduoduo": {
           "amount": 33.7,
@@ -111,13 +111,13 @@
     },
     "d30": {
       "total": {
-        "amount": 340950.53,
-        "count": 7133
+        "amount": 341070.33,
+        "count": 7135
       },
       "byPlatform": {
         "douyin": {
-          "amount": 307560.38,
-          "count": 6078
+          "amount": 307680.18,
+          "count": 6080
         },
         "pinduoduo": {
           "amount": 33390.15,
@@ -171,16 +171,16 @@
       "count": 50
     },
     {
-      "name": "My gir服装",
-      "platform": "pinduoduo",
-      "platformLabel": "拼多多",
-      "amount": 0,
-      "count": 0
-    },
-    {
       "name": "My",
       "platform": "douyin",
       "platformLabel": "抖店",
+      "amount": 119.8,
+      "count": 2
+    },
+    {
+      "name": "My gir服装",
+      "platform": "pinduoduo",
+      "platformLabel": "拼多多",
       "amount": 0,
       "count": 0
     },
@@ -204,8 +204,8 @@
       "name": "My",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 135552.18,
-      "count": 2417
+      "amount": 135671.98,
+      "count": 2419
     },
     {
       "name": "琪宝衣帽室",
@@ -240,8 +240,8 @@
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 307560.38,
-      "count": 6078,
+      "amount": 307680.18,
+      "count": 6080,
       "share": 90.2
     },
     {
@@ -517,7 +517,7 @@
     },
     {
       "date": "2026-08-27",
-      "amount": 1348.9,
+      "amount": 1468.7,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": false,
@@ -539,39 +539,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 1348.9,
-        "productCost": 809.34,
+        "revenue": 1468.7,
+        "productCost": 881.22,
         "shippingCost": 0,
-        "grossProfit": 539.56,
+        "grossProfit": 587.48,
         "grossMargin": 40,
-        "capturedOrders": 50,
-        "expectedOrders": 50,
+        "capturedOrders": 52,
+        "expectedOrders": 52,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 78308.62,
-        "productCost": 46985.17,
+        "revenue": 78428.42,
+        "productCost": 47057.05,
         "shippingCost": 0,
-        "grossProfit": 31323.45,
+        "grossProfit": 31371.37,
         "grossMargin": 40,
-        "capturedOrders": 1589,
-        "expectedOrders": 1589,
+        "capturedOrders": 1591,
+        "expectedOrders": 1591,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 340950.53,
-        "productCost": 204570.32,
+        "revenue": 341070.33,
+        "productCost": 204642.2,
         "shippingCost": 0,
-        "grossProfit": 136380.21,
+        "grossProfit": 136428.13,
         "grossMargin": 40,
-        "capturedOrders": 7133,
-        "expectedOrders": 7133,
+        "capturedOrders": 7135,
+        "expectedOrders": 7135,
         "orderCoverage": 100,
         "costCoverage": 100
       }
