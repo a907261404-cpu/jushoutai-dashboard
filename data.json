@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-08-27T00:39:03.048Z",
+  "updatedAt": "2026-08-27T00:59:03.306Z",
   "today": "2026-08-27",
   "range7": "2026-08-21 ~ 2026-08-27",
   "range30": "2026-07-29 ~ 2026-08-27",
   "platforms": {
     "today": {
       "total": {
-        "amount": 3029.9,
-        "count": 80
+        "amount": 3059.8,
+        "count": 81
       },
       "byPlatform": {
         "douyin": {
-          "amount": 3029.9,
-          "count": 80
+          "amount": 3059.8,
+          "count": 81
         },
         "pinduoduo": {
           "amount": 0,
@@ -59,13 +59,13 @@
     },
     "d7": {
       "total": {
-        "amount": 79989.62,
-        "count": 1619
+        "amount": 80019.52,
+        "count": 1620
       },
       "byPlatform": {
         "douyin": {
-          "amount": 79955.92,
-          "count": 1618
+          "amount": 79985.82,
+          "count": 1619
         },
         "pinduoduo": {
           "amount": 33.7,
@@ -111,13 +111,13 @@
     },
     "d30": {
       "total": {
-        "amount": 342631.53,
-        "count": 7163
+        "amount": 342661.43,
+        "count": 7164
       },
       "byPlatform": {
         "douyin": {
-          "amount": 309241.38,
-          "count": 6108
+          "amount": 309271.28,
+          "count": 6109
         },
         "pinduoduo": {
           "amount": 33390.15,
@@ -164,18 +164,18 @@
   },
   "stores": [
     {
+      "name": "My",
+      "platform": "douyin",
+      "platformLabel": "抖店",
+      "amount": 1537.4,
+      "count": 26
+    },
+    {
       "name": "琪宝衣帽室",
       "platform": "douyin",
       "platformLabel": "抖店",
       "amount": 1522.4,
       "count": 55
-    },
-    {
-      "name": "My",
-      "platform": "douyin",
-      "platformLabel": "抖店",
-      "amount": 1507.5,
-      "count": 25
     },
     {
       "name": "My gir服装",
@@ -204,8 +204,8 @@
       "name": "My",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 137059.68,
-      "count": 2442
+      "amount": 137089.58,
+      "count": 2443
     },
     {
       "name": "琪宝衣帽室",
@@ -240,8 +240,8 @@
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 309241.38,
-      "count": 6108,
+      "amount": 309271.28,
+      "count": 6109,
       "share": 90.3
     },
     {
@@ -517,7 +517,7 @@
     },
     {
       "date": "2026-08-27",
-      "amount": 3029.9,
+      "amount": 3059.8,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": false,
@@ -539,39 +539,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 3029.9,
-        "productCost": 1817.94,
+        "revenue": 3059.8,
+        "productCost": 1835.88,
         "shippingCost": 0,
-        "grossProfit": 1211.96,
+        "grossProfit": 1223.92,
         "grossMargin": 40,
-        "capturedOrders": 80,
-        "expectedOrders": 80,
+        "capturedOrders": 81,
+        "expectedOrders": 81,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 79989.62,
-        "productCost": 47993.77,
+        "revenue": 80019.52,
+        "productCost": 48011.71,
         "shippingCost": 0,
-        "grossProfit": 31995.85,
+        "grossProfit": 32007.81,
         "grossMargin": 40,
-        "capturedOrders": 1619,
-        "expectedOrders": 1619,
+        "capturedOrders": 1620,
+        "expectedOrders": 1620,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 342631.53,
-        "productCost": 205578.92,
+        "revenue": 342661.43,
+        "productCost": 205596.86,
         "shippingCost": 0,
-        "grossProfit": 137052.61,
+        "grossProfit": 137064.57,
         "grossMargin": 40,
-        "capturedOrders": 7163,
-        "expectedOrders": 7163,
+        "capturedOrders": 7164,
+        "expectedOrders": 7164,
         "orderCoverage": 100,
         "costCoverage": 100
       }
