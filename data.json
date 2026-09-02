@@ -26,9 +26,9 @@
       },
       "coverage": {
         "expected": 6,
-        "captured": 1,
+        "captured": 3,
         "complete": false,
-        "percentage": 16.7
+        "percentage": 50
       },
       "prev": {
         "total": {
@@ -78,9 +78,9 @@
       },
       "coverage": {
         "expected": 42,
-        "captured": 19,
+        "captured": 25,
         "complete": false,
-        "percentage": 45.2
+        "percentage": 59.5
       },
       "prev": {
         "total": {
@@ -130,9 +130,9 @@
       },
       "coverage": {
         "expected": 180,
-        "captured": 88,
+        "captured": 94,
         "complete": false,
-        "percentage": 48.9
+        "percentage": 52.2
       },
       "prev": {
         "total": {
@@ -519,13 +519,13 @@
     }
   ],
   "salesHistory": {
-    "start": "2026-08-01",
-    "end": "2026-08-30",
+    "start": "2026-08-04",
+    "end": "2026-09-02",
     "complete": false,
-    "coverage": 48.9,
-    "capturedStoreDays": 88,
+    "coverage": 52.2,
+    "capturedStoreDays": 94,
     "expectedStoreDays": 180,
-    "syncedAt": "2026-08-30T10:04:25.205Z"
+    "syncedAt": "2026-09-02T09:53:03.261Z"
   },
   "profit": {
     "ranges": {
