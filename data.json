@@ -1,6 +1,6 @@
 {
   "error": null,
-  "updatedAt": "2026-09-06T12:17:27.817Z",
+  "updatedAt": "2026-09-06T12:37:29.206Z",
   "today": "2026-09-06",
   "range7": "2026-08-31 ~ 2026-09-06",
   "range30": "2026-08-08 ~ 2026-09-06",
@@ -8,12 +8,12 @@
     "today": {
       "total": {
         "amount": 32166.4,
-        "count": 795
+        "count": 796
       },
       "byPlatform": {
         "douyin": {
           "amount": 32166.4,
-          "count": 795
+          "count": 796
         },
         "pinduoduo": {
           "amount": 0,
@@ -60,12 +60,12 @@
     "d7": {
       "total": {
         "amount": 81332.4,
-        "count": 1871
+        "count": 1872
       },
       "byPlatform": {
         "douyin": {
           "amount": 81332.4,
-          "count": 1871
+          "count": 1872
         },
         "pinduoduo": {
           "amount": 0,
@@ -112,12 +112,12 @@
     "d30": {
       "total": {
         "amount": 229557.45,
-        "count": 5378
+        "count": 5379
       },
       "byPlatform": {
         "douyin": {
           "amount": 213744.3,
-          "count": 4874
+          "count": 4875
         },
         "pinduoduo": {
           "amount": 15813.15,
@@ -168,7 +168,7 @@
       "platform": "douyin",
       "platformLabel": "抖店",
       "amount": 30700,
-      "count": 769
+      "count": 770
     },
     {
       "name": "MY琪",
@@ -198,7 +198,7 @@
       "platform": "douyin",
       "platformLabel": "抖店",
       "amount": 155609.86,
-      "count": 3731
+      "count": 3732
     },
     {
       "name": "3号店",
@@ -241,7 +241,7 @@
       "platform": "douyin",
       "label": "抖店",
       "amount": 213744.3,
-      "count": 4874,
+      "count": 4875,
       "share": 93.1
     },
     {
@@ -544,8 +544,8 @@
         "shippingCost": 0,
         "grossProfit": 12866.56,
         "grossMargin": 40,
-        "capturedOrders": 795,
-        "expectedOrders": 795,
+        "capturedOrders": 796,
+        "expectedOrders": 796,
         "orderCoverage": 100,
         "costCoverage": 100
       },
@@ -557,8 +557,8 @@
         "shippingCost": 0,
         "grossProfit": 32532.96,
         "grossMargin": 40,
-        "capturedOrders": 1871,
-        "expectedOrders": 1871,
+        "capturedOrders": 1872,
+        "expectedOrders": 1872,
         "orderCoverage": 100,
         "costCoverage": 100
       },
@@ -570,8 +570,8 @@
         "shippingCost": 0,
         "grossProfit": 91822.98,
         "grossMargin": 40,
-        "capturedOrders": 5378,
-        "expectedOrders": 5378,
+        "capturedOrders": 5379,
+        "expectedOrders": 5379,
         "orderCoverage": 100,
         "costCoverage": 100
       }
