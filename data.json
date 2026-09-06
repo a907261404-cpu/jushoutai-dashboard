@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-09-06T15:13:44.663Z",
+  "updatedAt": "2026-09-06T15:23:45.687Z",
   "today": "2026-09-06",
   "range7": "2026-08-31 ~ 2026-09-06",
   "range30": "2026-08-08 ~ 2026-09-06",
   "platforms": {
     "today": {
       "total": {
-        "amount": 32586,
-        "count": 804
+        "amount": 32835.9,
+        "count": 808
       },
       "byPlatform": {
         "douyin": {
-          "amount": 32586,
-          "count": 804
+          "amount": 32835.9,
+          "count": 808
         },
         "pinduoduo": {
           "amount": 0,
@@ -59,13 +59,13 @@
     },
     "d7": {
       "total": {
-        "amount": 81752,
-        "count": 1880
+        "amount": 82001.9,
+        "count": 1884
       },
       "byPlatform": {
         "douyin": {
-          "amount": 81752,
-          "count": 1880
+          "amount": 82001.9,
+          "count": 1884
         },
         "pinduoduo": {
           "amount": 0,
@@ -111,13 +111,13 @@
     },
     "d30": {
       "total": {
-        "amount": 229977.05,
-        "count": 5387
+        "amount": 230226.95,
+        "count": 5391
       },
       "byPlatform": {
         "douyin": {
-          "amount": 214163.9,
-          "count": 4883
+          "amount": 214413.8,
+          "count": 4887
         },
         "pinduoduo": {
           "amount": 15813.15,
@@ -167,15 +167,15 @@
       "name": "琪宝衣帽室",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 30900,
-      "count": 774
+      "amount": 31100,
+      "count": 777
     },
     {
       "name": "MY琪",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 1616.1,
-      "count": 29
+      "amount": 1666,
+      "count": 30
     },
     {
       "name": "焦糖",
@@ -197,8 +197,8 @@
       "name": "琪宝衣帽室",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 155809.86,
-      "count": 3736
+      "amount": 156009.86,
+      "count": 3739
     },
     {
       "name": "3号店",
@@ -225,8 +225,8 @@
       "name": "MY琪",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 10416.3,
-      "count": 187
+      "amount": 10466.2,
+      "count": 188
     },
     {
       "name": "Studio琪",
@@ -240,8 +240,8 @@
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 214163.9,
-      "count": 4883,
+      "amount": 214413.8,
+      "count": 4887,
       "share": 93.1
     },
     {
@@ -517,7 +517,7 @@
     },
     {
       "date": "2026-09-06",
-      "amount": 32586,
+      "amount": 32835.9,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": false,
@@ -539,39 +539,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 32586,
-        "productCost": 19551.6,
+        "revenue": 32835.9,
+        "productCost": 19701.54,
         "shippingCost": 0,
-        "grossProfit": 13034.4,
+        "grossProfit": 13134.36,
         "grossMargin": 40,
-        "capturedOrders": 804,
-        "expectedOrders": 804,
+        "capturedOrders": 808,
+        "expectedOrders": 808,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 81752,
-        "productCost": 49051.2,
+        "revenue": 82001.9,
+        "productCost": 49201.14,
         "shippingCost": 0,
-        "grossProfit": 32700.8,
+        "grossProfit": 32800.76,
         "grossMargin": 40,
-        "capturedOrders": 1880,
-        "expectedOrders": 1880,
+        "capturedOrders": 1884,
+        "expectedOrders": 1884,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 229977.05,
-        "productCost": 137986.23,
+        "revenue": 230226.95,
+        "productCost": 138136.17,
         "shippingCost": 0,
-        "grossProfit": 91990.82,
+        "grossProfit": 92090.78,
         "grossMargin": 40,
-        "capturedOrders": 5387,
-        "expectedOrders": 5387,
+        "capturedOrders": 5391,
+        "expectedOrders": 5391,
         "orderCoverage": 100,
         "costCoverage": 100
       }
