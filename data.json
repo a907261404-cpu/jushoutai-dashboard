@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-09-08T16:47:06.629Z",
+  "updatedAt": "2026-09-08T16:56:03.428Z",
   "today": "2026-09-09",
   "range7": "2026-09-03 ~ 2026-09-09",
   "range30": "2026-08-11 ~ 2026-09-09",
   "platforms": {
     "today": {
       "total": {
-        "amount": 339.9,
-        "count": 6
+        "amount": 409.8,
+        "count": 7
       },
       "byPlatform": {
         "douyin": {
-          "amount": 269.6,
-          "count": 4
+          "amount": 339.5,
+          "count": 5
         },
         "pinduoduo": {
           "amount": 70.3,
@@ -59,13 +59,13 @@
     },
     "d7": {
       "total": {
-        "amount": 112922.94,
-        "count": 2727
+        "amount": 112992.84,
+        "count": 2728
       },
       "byPlatform": {
         "douyin": {
-          "amount": 105174.7,
-          "count": 2491
+          "amount": 105244.6,
+          "count": 2492
         },
         "pinduoduo": {
           "amount": 7748.24,
@@ -111,13 +111,13 @@
     },
     "d30": {
       "total": {
-        "amount": 247720.24,
-        "count": 5817
+        "amount": 247790.14,
+        "count": 5818
       },
       "byPlatform": {
         "douyin": {
-          "amount": 239972,
-          "count": 5581
+          "amount": 240041.9,
+          "count": 5582
         },
         "pinduoduo": {
           "amount": 7748.24,
@@ -164,18 +164,18 @@
   },
   "stores": [
     {
+      "name": "3号店",
+      "platform": "douyin",
+      "platformLabel": "抖店",
+      "amount": 149.8,
+      "count": 2
+    },
+    {
       "name": "焦糖",
       "platform": "douyin",
       "platformLabel": "抖店",
       "amount": 119.8,
       "count": 2
-    },
-    {
-      "name": "3号店",
-      "platform": "douyin",
-      "platformLabel": "抖店",
-      "amount": 79.9,
-      "count": 1
     },
     {
       "name": "糖醋排骨琪",
@@ -246,8 +246,8 @@
       "name": "3号店",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 1653.6,
-      "count": 24
+      "amount": 1723.5,
+      "count": 25
     },
     {
       "name": "辣辣家服饰",
@@ -261,8 +261,8 @@
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 239972,
-      "count": 5581,
+      "amount": 240041.9,
+      "count": 5582,
       "share": 96.9
     },
     {
@@ -557,7 +557,7 @@
     },
     {
       "date": "2026-09-09",
-      "amount": 339.9,
+      "amount": 409.8,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": false,
@@ -579,39 +579,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 339.9,
-        "productCost": 203.94,
+        "revenue": 409.8,
+        "productCost": 245.88,
         "shippingCost": 0,
-        "grossProfit": 135.96,
+        "grossProfit": 163.92,
         "grossMargin": 40,
-        "capturedOrders": 6,
-        "expectedOrders": 6,
+        "capturedOrders": 7,
+        "expectedOrders": 7,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 112922.94,
-        "productCost": 67753.76,
+        "revenue": 112992.84,
+        "productCost": 67795.7,
         "shippingCost": 0,
-        "grossProfit": 45169.18,
+        "grossProfit": 45197.14,
         "grossMargin": 40,
-        "capturedOrders": 2727,
-        "expectedOrders": 2727,
+        "capturedOrders": 2728,
+        "expectedOrders": 2728,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 247720.24,
-        "productCost": 148632.14,
+        "revenue": 247790.14,
+        "productCost": 148674.08,
         "shippingCost": 0,
-        "grossProfit": 99088.1,
+        "grossProfit": 99116.06,
         "grossMargin": 40,
-        "capturedOrders": 5817,
-        "expectedOrders": 5817,
+        "capturedOrders": 5818,
+        "expectedOrders": 5818,
         "orderCoverage": 100,
         "costCoverage": 100
       }
