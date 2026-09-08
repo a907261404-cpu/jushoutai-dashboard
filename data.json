@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-09-08T07:26:28.294Z",
+  "updatedAt": "2026-09-08T07:46:28.539Z",
   "today": "2026-09-08",
   "range7": "2026-09-02 ~ 2026-09-08",
   "range30": "2026-08-10 ~ 2026-09-08",
   "platforms": {
     "today": {
       "total": {
-        "amount": 26010.22,
-        "count": 631
+        "amount": 26110.22,
+        "count": 632
       },
       "byPlatform": {
         "douyin": {
-          "amount": 24578.6,
-          "count": 589
+          "amount": 24678.6,
+          "count": 590
         },
         "pinduoduo": {
           "amount": 1431.62,
@@ -59,13 +59,13 @@
     },
     "d7": {
       "total": {
-        "amount": 128467.67,
-        "count": 3054
+        "amount": 128567.67,
+        "count": 3055
       },
       "byPlatform": {
         "douyin": {
-          "amount": 121867.9,
-          "count": 2850
+          "amount": 121967.9,
+          "count": 2851
         },
         "pinduoduo": {
           "amount": 6599.77,
@@ -111,13 +111,13 @@
     },
     "d30": {
       "total": {
-        "amount": 250274.37,
-        "count": 5857
+        "amount": 250374.37,
+        "count": 5858
       },
       "byPlatform": {
         "douyin": {
-          "amount": 243674.6,
-          "count": 5653
+          "amount": 243774.6,
+          "count": 5654
         },
         "pinduoduo": {
           "amount": 6599.77,
@@ -167,8 +167,8 @@
       "name": "焦糖",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 13200,
-      "count": 312
+      "amount": 13300,
+      "count": 313
     },
     {
       "name": "琪宝衣帽室",
@@ -225,8 +225,8 @@
       "name": "焦糖",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 39456.8,
-      "count": 993
+      "amount": 39556.8,
+      "count": 994
     },
     {
       "name": "studio琪",
@@ -268,8 +268,8 @@
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 243674.6,
-      "count": 5653,
+      "amount": 243774.6,
+      "count": 5654,
       "share": 97.4
     },
     {
@@ -283,7 +283,7 @@
   "highlight": {
     "best": {
       "date": "2026-09-08",
-      "amount": 26010.22,
+      "amount": 26110.22,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": true,
@@ -564,7 +564,7 @@
     },
     {
       "date": "2026-09-08",
-      "amount": 26010.22,
+      "amount": 26110.22,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": true,
@@ -586,39 +586,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 26010.22,
-        "productCost": 15606.13,
+        "revenue": 26110.22,
+        "productCost": 15666.13,
         "shippingCost": 0,
-        "grossProfit": 10404.09,
+        "grossProfit": 10444.09,
         "grossMargin": 40,
-        "capturedOrders": 631,
-        "expectedOrders": 631,
+        "capturedOrders": 632,
+        "expectedOrders": 632,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 128467.67,
-        "productCost": 77080.6,
+        "revenue": 128567.67,
+        "productCost": 77140.6,
         "shippingCost": 0,
-        "grossProfit": 51387.07,
+        "grossProfit": 51427.07,
         "grossMargin": 40,
-        "capturedOrders": 3054,
-        "expectedOrders": 3054,
+        "capturedOrders": 3055,
+        "expectedOrders": 3055,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 250274.37,
-        "productCost": 150164.62,
+        "revenue": 250374.37,
+        "productCost": 150224.62,
         "shippingCost": 0,
-        "grossProfit": 100109.75,
+        "grossProfit": 100149.75,
         "grossMargin": 40,
-        "capturedOrders": 5857,
-        "expectedOrders": 5857,
+        "capturedOrders": 5858,
+        "expectedOrders": 5858,
         "orderCoverage": 100,
         "costCoverage": 100
       }
