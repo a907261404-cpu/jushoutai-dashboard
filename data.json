@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-09-08T10:34:24.053Z",
+  "updatedAt": "2026-09-08T10:44:24.639Z",
   "today": "2026-09-08",
   "range7": "2026-09-02 ~ 2026-09-08",
   "range30": "2026-08-10 ~ 2026-09-08",
   "platforms": {
     "today": {
       "total": {
-        "amount": 26949.32,
-        "count": 653
+        "amount": 27049.32,
+        "count": 654
       },
       "byPlatform": {
         "douyin": {
-          "amount": 25098.3,
-          "count": 600
+          "amount": 25198.3,
+          "count": 601
         },
         "pinduoduo": {
           "amount": 1851.02,
@@ -59,13 +59,13 @@
     },
     "d7": {
       "total": {
-        "amount": 129406.77,
-        "count": 3076
+        "amount": 129506.77,
+        "count": 3077
       },
       "byPlatform": {
         "douyin": {
-          "amount": 122387.6,
-          "count": 2861
+          "amount": 122487.6,
+          "count": 2862
         },
         "pinduoduo": {
           "amount": 7019.17,
@@ -111,13 +111,13 @@
     },
     "d30": {
       "total": {
-        "amount": 251213.47,
-        "count": 5879
+        "amount": 251313.47,
+        "count": 5880
       },
       "byPlatform": {
         "douyin": {
-          "amount": 244194.3,
-          "count": 5664
+          "amount": 244294.3,
+          "count": 5665
         },
         "pinduoduo": {
           "amount": 7019.17,
@@ -167,8 +167,8 @@
       "name": "焦糖",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 13300,
-      "count": 315
+      "amount": 13400,
+      "count": 316
     },
     {
       "name": "琪宝衣帽室",
@@ -225,8 +225,8 @@
       "name": "焦糖",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 39556.8,
-      "count": 996
+      "amount": 39656.8,
+      "count": 997
     },
     {
       "name": "studio琪",
@@ -268,8 +268,8 @@
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 244194.3,
-      "count": 5664,
+      "amount": 244294.3,
+      "count": 5665,
       "share": 97.2
     },
     {
@@ -283,7 +283,7 @@
   "highlight": {
     "best": {
       "date": "2026-09-08",
-      "amount": 26949.32,
+      "amount": 27049.32,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": true,
@@ -564,7 +564,7 @@
     },
     {
       "date": "2026-09-08",
-      "amount": 26949.32,
+      "amount": 27049.32,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": true,
@@ -586,39 +586,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 26949.32,
-        "productCost": 16169.59,
+        "revenue": 27049.32,
+        "productCost": 16229.59,
         "shippingCost": 0,
-        "grossProfit": 10779.73,
+        "grossProfit": 10819.73,
         "grossMargin": 40,
-        "capturedOrders": 653,
-        "expectedOrders": 653,
+        "capturedOrders": 654,
+        "expectedOrders": 654,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 129406.77,
-        "productCost": 77644.06,
+        "revenue": 129506.77,
+        "productCost": 77704.06,
         "shippingCost": 0,
-        "grossProfit": 51762.71,
+        "grossProfit": 51802.71,
         "grossMargin": 40,
-        "capturedOrders": 3076,
-        "expectedOrders": 3076,
+        "capturedOrders": 3077,
+        "expectedOrders": 3077,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 251213.47,
-        "productCost": 150728.08,
+        "revenue": 251313.47,
+        "productCost": 150788.08,
         "shippingCost": 0,
-        "grossProfit": 100485.39,
+        "grossProfit": 100525.39,
         "grossMargin": 40,
-        "capturedOrders": 5879,
-        "expectedOrders": 5879,
+        "capturedOrders": 5880,
+        "expectedOrders": 5880,
         "orderCoverage": 100,
         "costCoverage": 100
       }
