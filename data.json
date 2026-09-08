@@ -1,14 +1,14 @@
 {
   "error": null,
-  "updatedAt": "2026-09-08T07:55:24.954Z",
+  "updatedAt": "2026-09-08T08:04:21.835Z",
   "today": "2026-09-08",
   "range7": "2026-09-02 ~ 2026-09-08",
   "range30": "2026-08-10 ~ 2026-09-08",
   "platforms": {
     "today": {
       "total": {
-        "amount": 26270.12,
-        "count": 634
+        "amount": 26358.72,
+        "count": 637
       },
       "byPlatform": {
         "douyin": {
@@ -16,8 +16,8 @@
           "count": 591
         },
         "pinduoduo": {
-          "amount": 1491.52,
-          "count": 43
+          "amount": 1580.12,
+          "count": 46
         },
         "taobao": {
           "amount": 0,
@@ -59,8 +59,8 @@
     },
     "d7": {
       "total": {
-        "amount": 128727.57,
-        "count": 3057
+        "amount": 128816.17,
+        "count": 3060
       },
       "byPlatform": {
         "douyin": {
@@ -68,8 +68,8 @@
           "count": 2852
         },
         "pinduoduo": {
-          "amount": 6659.67,
-          "count": 205
+          "amount": 6748.27,
+          "count": 208
         },
         "taobao": {
           "amount": 0,
@@ -111,8 +111,8 @@
     },
     "d30": {
       "total": {
-        "amount": 250534.27,
-        "count": 5860
+        "amount": 250622.87,
+        "count": 5863
       },
       "byPlatform": {
         "douyin": {
@@ -120,8 +120,8 @@
           "count": 5655
         },
         "pinduoduo": {
-          "amount": 6659.67,
-          "count": 205
+          "amount": 6748.27,
+          "count": 208
         },
         "taobao": {
           "amount": 0,
@@ -181,8 +181,8 @@
       "name": "糖醋排骨琪",
       "platform": "pinduoduo",
       "platformLabel": "拼多多",
-      "amount": 1421.62,
-      "count": 42
+      "amount": 1510.22,
+      "count": 45
     },
     {
       "name": "MY琪",
@@ -246,8 +246,8 @@
       "name": "糖醋排骨琪",
       "platform": "pinduoduo",
       "platformLabel": "拼多多",
-      "amount": 6332.17,
-      "count": 200
+      "amount": 6420.77,
+      "count": 203
     },
     {
       "name": "3号店",
@@ -275,15 +275,15 @@
     {
       "platform": "pinduoduo",
       "label": "拼多多",
-      "amount": 6659.67,
-      "count": 205,
+      "amount": 6748.27,
+      "count": 208,
       "share": 2.7
     }
   ],
   "highlight": {
     "best": {
       "date": "2026-09-08",
-      "amount": 26270.12,
+      "amount": 26358.72,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": true,
@@ -564,7 +564,7 @@
     },
     {
       "date": "2026-09-08",
-      "amount": 26270.12,
+      "amount": 26358.72,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": true,
@@ -586,39 +586,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 26270.12,
-        "productCost": 15762.07,
+        "revenue": 26358.72,
+        "productCost": 15815.23,
         "shippingCost": 0,
-        "grossProfit": 10508.05,
+        "grossProfit": 10543.49,
         "grossMargin": 40,
-        "capturedOrders": 634,
-        "expectedOrders": 634,
+        "capturedOrders": 637,
+        "expectedOrders": 637,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 128727.57,
-        "productCost": 77236.54,
+        "revenue": 128816.17,
+        "productCost": 77289.7,
         "shippingCost": 0,
-        "grossProfit": 51491.03,
+        "grossProfit": 51526.47,
         "grossMargin": 40,
-        "capturedOrders": 3057,
-        "expectedOrders": 3057,
+        "capturedOrders": 3060,
+        "expectedOrders": 3060,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 250534.27,
-        "productCost": 150320.56,
+        "revenue": 250622.87,
+        "productCost": 150373.72,
         "shippingCost": 0,
-        "grossProfit": 100213.71,
+        "grossProfit": 100249.15,
         "grossMargin": 40,
-        "capturedOrders": 5860,
-        "expectedOrders": 5860,
+        "capturedOrders": 5863,
+        "expectedOrders": 5863,
         "orderCoverage": 100,
         "costCoverage": 100
       }
