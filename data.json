@@ -1,14 +1,14 @@
 {
   "error": null,
-  "updatedAt": "2026-09-09T17:07:28.429Z",
+  "updatedAt": "2026-09-09T17:17:39.207Z",
   "today": "2026-09-10",
   "range7": "2026-09-04 ~ 2026-09-10",
   "range30": "2026-08-12 ~ 2026-09-10",
   "platforms": {
     "today": {
       "total": {
-        "amount": 415.65,
-        "count": 10
+        "amount": 444.45,
+        "count": 11
       },
       "byPlatform": {
         "douyin": {
@@ -16,8 +16,8 @@
           "count": 4
         },
         "pinduoduo": {
-          "amount": 176.05,
-          "count": 6
+          "amount": 204.85,
+          "count": 7
         },
         "taobao": {
           "amount": 0,
@@ -59,8 +59,8 @@
     },
     "d7": {
       "total": {
-        "amount": 123128.46,
-        "count": 2878
+        "amount": 123157.26,
+        "count": 2879
       },
       "byPlatform": {
         "douyin": {
@@ -68,8 +68,8 @@
           "count": 2583
         },
         "pinduoduo": {
-          "amount": 9808.26,
-          "count": 295
+          "amount": 9837.06,
+          "count": 296
         },
         "taobao": {
           "amount": 0,
@@ -111,8 +111,8 @@
     },
     "d30": {
       "total": {
-        "amount": 256971.36,
-        "count": 5946
+        "amount": 257000.16,
+        "count": 5947
       },
       "byPlatform": {
         "douyin": {
@@ -120,8 +120,8 @@
           "count": 5651
         },
         "pinduoduo": {
-          "amount": 9808.26,
-          "count": 295
+          "amount": 9837.06,
+          "count": 296
         },
         "taobao": {
           "amount": 0,
@@ -167,8 +167,8 @@
       "name": "糖醋排骨琪",
       "platform": "pinduoduo",
       "platformLabel": "拼多多",
-      "amount": 176.05,
-      "count": 6
+      "amount": 204.85,
+      "count": 7
     },
     {
       "name": "3号店",
@@ -239,8 +239,8 @@
       "name": "糖醋排骨琪",
       "platform": "pinduoduo",
       "platformLabel": "拼多多",
-      "amount": 9480.76,
-      "count": 290
+      "amount": 9509.56,
+      "count": 291
     },
     {
       "name": "3号店",
@@ -268,8 +268,8 @@
     {
       "platform": "pinduoduo",
       "label": "拼多多",
-      "amount": 9808.26,
-      "count": 295,
+      "amount": 9837.06,
+      "count": 296,
       "share": 3.8
     }
   ],
@@ -538,7 +538,7 @@
     },
     {
       "date": "2026-09-10",
-      "amount": 415.65,
+      "amount": 444.45,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": false,
@@ -560,39 +560,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 415.65,
-        "productCost": 249.39,
+        "revenue": 444.45,
+        "productCost": 266.67,
         "shippingCost": 0,
-        "grossProfit": 166.26,
+        "grossProfit": 177.78,
         "grossMargin": 40,
-        "capturedOrders": 10,
-        "expectedOrders": 10,
+        "capturedOrders": 11,
+        "expectedOrders": 11,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 123128.46,
-        "productCost": 73877.08,
+        "revenue": 123157.26,
+        "productCost": 73894.36,
         "shippingCost": 0,
-        "grossProfit": 49251.38,
+        "grossProfit": 49262.9,
         "grossMargin": 40,
-        "capturedOrders": 2878,
-        "expectedOrders": 2878,
+        "capturedOrders": 2879,
+        "expectedOrders": 2879,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 256971.36,
-        "productCost": 154182.82,
+        "revenue": 257000.16,
+        "productCost": 154200.1,
         "shippingCost": 0,
-        "grossProfit": 102788.54,
+        "grossProfit": 102800.06,
         "grossMargin": 40,
-        "capturedOrders": 5946,
-        "expectedOrders": 5946,
+        "capturedOrders": 5947,
+        "expectedOrders": 5947,
         "orderCoverage": 100,
         "costCoverage": 100
       }
