@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-09-09T18:49:34.495Z",
+  "updatedAt": "2026-09-09T18:59:39.010Z",
   "today": "2026-09-10",
   "range7": "2026-09-04 ~ 2026-09-10",
   "range30": "2026-08-12 ~ 2026-09-10",
   "platforms": {
     "today": {
       "total": {
-        "amount": 526.55,
-        "count": 13
+        "amount": 696.25,
+        "count": 16
       },
       "byPlatform": {
         "douyin": {
-          "amount": 309.5,
-          "count": 5
+          "amount": 479.2,
+          "count": 8
         },
         "pinduoduo": {
           "amount": 217.05,
@@ -59,13 +59,13 @@
     },
     "d7": {
       "total": {
-        "amount": 123239.36,
-        "count": 2881
+        "amount": 123409.06,
+        "count": 2884
       },
       "byPlatform": {
         "douyin": {
-          "amount": 113390.1,
-          "count": 2584
+          "amount": 113559.8,
+          "count": 2587
         },
         "pinduoduo": {
           "amount": 9849.26,
@@ -111,13 +111,13 @@
     },
     "d30": {
       "total": {
-        "amount": 257082.26,
-        "count": 5949
+        "amount": 257251.96,
+        "count": 5952
       },
       "byPlatform": {
         "douyin": {
-          "amount": 247233,
-          "count": 5652
+          "amount": 247402.7,
+          "count": 5655
         },
         "pinduoduo": {
           "amount": 9849.26,
@@ -164,18 +164,18 @@
   },
   "stores": [
     {
+      "name": "MY琪",
+      "platform": "douyin",
+      "platformLabel": "抖店",
+      "amount": 309.5,
+      "count": 5
+    },
+    {
       "name": "糖醋排骨琪",
       "platform": "pinduoduo",
       "platformLabel": "拼多多",
       "amount": 217.05,
       "count": 8
-    },
-    {
-      "name": "MY琪",
-      "platform": "douyin",
-      "platformLabel": "抖店",
-      "amount": 139.8,
-      "count": 2
     },
     {
       "name": "3号店",
@@ -239,8 +239,8 @@
       "name": "MY琪",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 12259.1,
-      "count": 218
+      "amount": 12428.8,
+      "count": 221
     },
     {
       "name": "糖醋排骨琪",
@@ -268,8 +268,8 @@
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 247233,
-      "count": 5652,
+      "amount": 247402.7,
+      "count": 5655,
       "share": 96.2
     },
     {
@@ -545,7 +545,7 @@
     },
     {
       "date": "2026-09-10",
-      "amount": 526.55,
+      "amount": 696.25,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": false,
@@ -567,39 +567,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 526.55,
-        "productCost": 315.93,
+        "revenue": 696.25,
+        "productCost": 417.75,
         "shippingCost": 0,
-        "grossProfit": 210.62,
+        "grossProfit": 278.5,
         "grossMargin": 40,
-        "capturedOrders": 13,
-        "expectedOrders": 13,
+        "capturedOrders": 16,
+        "expectedOrders": 16,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 123239.36,
-        "productCost": 73943.62,
+        "revenue": 123409.06,
+        "productCost": 74045.44,
         "shippingCost": 0,
-        "grossProfit": 49295.74,
+        "grossProfit": 49363.62,
         "grossMargin": 40,
-        "capturedOrders": 2881,
-        "expectedOrders": 2881,
+        "capturedOrders": 2884,
+        "expectedOrders": 2884,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 257082.26,
-        "productCost": 154249.36,
+        "revenue": 257251.96,
+        "productCost": 154351.18,
         "shippingCost": 0,
-        "grossProfit": 102832.9,
+        "grossProfit": 102900.78,
         "grossMargin": 40,
-        "capturedOrders": 5949,
-        "expectedOrders": 5949,
+        "capturedOrders": 5952,
+        "expectedOrders": 5952,
         "orderCoverage": 100,
         "costCoverage": 100
       }
