@@ -1,6 +1,6 @@
 {
   "error": null,
-  "updatedAt": "2026-09-09T17:39:49.309Z",
+  "updatedAt": "2026-09-09T17:48:59.541Z",
   "today": "2026-09-10",
   "range7": "2026-09-04 ~ 2026-09-10",
   "range30": "2026-08-12 ~ 2026-09-10",
@@ -26,9 +26,9 @@
       },
       "coverage": {
         "expected": 8,
-        "captured": 6,
+        "captured": 7,
         "complete": false,
-        "percentage": 75
+        "percentage": 87.5
       },
       "prev": {
         "total": {
@@ -78,9 +78,9 @@
       },
       "coverage": {
         "expected": 56,
-        "captured": 36,
+        "captured": 37,
         "complete": false,
-        "percentage": 64.3
+        "percentage": 66.1
       },
       "prev": {
         "total": {
@@ -130,9 +130,9 @@
       },
       "coverage": {
         "expected": 240,
-        "captured": 95,
+        "captured": 96,
         "complete": false,
-        "percentage": 39.6
+        "percentage": 40
       },
       "prev": {
         "total": {
@@ -202,6 +202,13 @@
       "name": "studio琪",
       "platform": "douyin",
       "platformLabel": "抖店",
+      "amount": 0,
+      "count": 0
+    },
+    {
+      "name": "辣辣家服饰",
+      "platform": "pinduoduo",
+      "platformLabel": "拼多多",
       "amount": 0,
       "count": 0
     }
@@ -542,7 +549,7 @@
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": false,
-      "capturedStores": 6,
+      "capturedStores": 7,
       "expectedStores": 8
     }
   ],
@@ -550,8 +557,8 @@
     "start": "2026-08-12",
     "end": "2026-09-10",
     "complete": false,
-    "coverage": 39.6,
-    "capturedStoreDays": 95,
+    "coverage": 40,
+    "capturedStoreDays": 96,
     "expectedStoreDays": 240,
     "syncedAt": "2026-09-09T17:47:30.699Z"
   },
