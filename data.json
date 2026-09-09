@@ -1,23 +1,23 @@
 {
   "error": null,
-  "updatedAt": "2026-09-09T06:24:52.448Z",
+  "updatedAt": "2026-09-09T06:34:59.726Z",
   "today": "2026-09-09",
   "range7": "2026-09-03 ~ 2026-09-09",
   "range30": "2026-08-11 ~ 2026-09-09",
   "platforms": {
     "today": {
       "total": {
-        "amount": 25262.82,
-        "count": 520
+        "amount": 25285.22,
+        "count": 522
       },
       "byPlatform": {
         "douyin": {
           "amount": 24414,
-          "count": 494
+          "count": 495
         },
         "pinduoduo": {
-          "amount": 848.82,
-          "count": 26
+          "amount": 871.22,
+          "count": 27
         },
         "taobao": {
           "amount": 0,
@@ -59,17 +59,17 @@
     },
     "d7": {
       "total": {
-        "amount": 123819.64,
-        "count": 2872
+        "amount": 123842.04,
+        "count": 2874
       },
       "byPlatform": {
         "douyin": {
           "amount": 115778.5,
-          "count": 2628
+          "count": 2629
         },
         "pinduoduo": {
-          "amount": 8041.14,
-          "count": 244
+          "amount": 8063.54,
+          "count": 245
         },
         "taobao": {
           "amount": 0,
@@ -111,17 +111,17 @@
     },
     "d30": {
       "total": {
-        "amount": 258616.94,
-        "count": 5962
+        "amount": 258639.34,
+        "count": 5964
       },
       "byPlatform": {
         "douyin": {
           "amount": 250575.8,
-          "count": 5718
+          "count": 5719
         },
         "pinduoduo": {
-          "amount": 8041.14,
-          "count": 244
+          "amount": 8063.54,
+          "count": 245
         },
         "taobao": {
           "amount": 0,
@@ -168,14 +168,14 @@
       "platform": "douyin",
       "platformLabel": "抖店",
       "amount": 23200,
-      "count": 474
+      "count": 475
     },
     {
       "name": "糖醋排骨琪",
       "platform": "pinduoduo",
       "platformLabel": "拼多多",
-      "amount": 848.82,
-      "count": 26
+      "amount": 871.22,
+      "count": 27
     },
     {
       "name": "MY琪",
@@ -212,7 +212,7 @@
       "platform": "douyin",
       "platformLabel": "抖店",
       "amount": 182671.8,
-      "count": 4328
+      "count": 4329
     },
     {
       "name": "焦糖",
@@ -239,8 +239,8 @@
       "name": "糖醋排骨琪",
       "platform": "pinduoduo",
       "platformLabel": "拼多多",
-      "amount": 7713.64,
-      "count": 239
+      "amount": 7736.04,
+      "count": 240
     },
     {
       "name": "3号店",
@@ -262,14 +262,14 @@
       "platform": "douyin",
       "label": "抖店",
       "amount": 250575.8,
-      "count": 5718,
+      "count": 5719,
       "share": 96.9
     },
     {
       "platform": "pinduoduo",
       "label": "拼多多",
-      "amount": 8041.14,
-      "count": 244,
+      "amount": 8063.54,
+      "count": 245,
       "share": 3.1
     }
   ],
@@ -538,7 +538,7 @@
     },
     {
       "date": "2026-09-09",
-      "amount": 25262.82,
+      "amount": 25285.22,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": false,
@@ -560,39 +560,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 25262.82,
-        "productCost": 15157.69,
+        "revenue": 25285.22,
+        "productCost": 15171.13,
         "shippingCost": 0,
-        "grossProfit": 10105.13,
+        "grossProfit": 10114.09,
         "grossMargin": 40,
-        "capturedOrders": 520,
-        "expectedOrders": 520,
+        "capturedOrders": 522,
+        "expectedOrders": 522,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 123819.64,
-        "productCost": 74291.78,
+        "revenue": 123842.04,
+        "productCost": 74305.22,
         "shippingCost": 0,
-        "grossProfit": 49527.86,
+        "grossProfit": 49536.82,
         "grossMargin": 40,
-        "capturedOrders": 2872,
-        "expectedOrders": 2872,
+        "capturedOrders": 2874,
+        "expectedOrders": 2874,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 258616.94,
-        "productCost": 155170.16,
+        "revenue": 258639.34,
+        "productCost": 155183.6,
         "shippingCost": 0,
-        "grossProfit": 103446.78,
+        "grossProfit": 103455.74,
         "grossMargin": 40,
-        "capturedOrders": 5962,
-        "expectedOrders": 5962,
+        "capturedOrders": 5964,
+        "expectedOrders": 5964,
         "orderCoverage": 100,
         "costCoverage": 100
       }
