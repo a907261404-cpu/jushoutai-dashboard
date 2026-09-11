@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-09-11T16:37:58.516Z",
+  "updatedAt": "2026-09-11T16:48:04.567Z",
   "today": "2026-09-12",
   "range7": "2026-09-06 ~ 2026-09-12",
   "range30": "2026-08-14 ~ 2026-09-12",
   "platforms": {
     "today": {
       "total": {
-        "amount": 119.8,
-        "count": 2
+        "amount": 189.7,
+        "count": 3
       },
       "byPlatform": {
         "douyin": {
-          "amount": 119.8,
-          "count": 2
+          "amount": 189.7,
+          "count": 3
         },
         "pinduoduo": {
           "amount": 0,
@@ -59,13 +59,13 @@
     },
     "d7": {
       "total": {
-        "amount": 135696.19,
-        "count": 3203
+        "amount": 135766.09,
+        "count": 3204
       },
       "byPlatform": {
         "douyin": {
-          "amount": 125008.7,
-          "count": 2876
+          "amount": 125078.6,
+          "count": 2877
         },
         "pinduoduo": {
           "amount": 10687.49,
@@ -111,13 +111,13 @@
     },
     "d30": {
       "total": {
-        "amount": 282888.69,
-        "count": 6640
+        "amount": 282958.59,
+        "count": 6641
       },
       "byPlatform": {
         "douyin": {
-          "amount": 272201.2,
-          "count": 6313
+          "amount": 272271.1,
+          "count": 6314
         },
         "pinduoduo": {
           "amount": 10687.49,
@@ -164,6 +164,13 @@
   },
   "stores": [
     {
+      "name": "3号店",
+      "platform": "douyin",
+      "platformLabel": "抖店",
+      "amount": 69.9,
+      "count": 1
+    },
+    {
       "name": "MY琪",
       "platform": "douyin",
       "platformLabel": "抖店",
@@ -186,13 +193,6 @@
     },
     {
       "name": "焦糖",
-      "platform": "douyin",
-      "platformLabel": "抖店",
-      "amount": 0,
-      "count": 0
-    },
-    {
-      "name": "3号店",
       "platform": "douyin",
       "platformLabel": "抖店",
       "amount": 0,
@@ -239,8 +239,8 @@
       "name": "3号店",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 2492.4,
-      "count": 36
+      "amount": 2562.3,
+      "count": 37
     },
     {
       "name": "辣辣家服饰",
@@ -254,8 +254,8 @@
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 272201.2,
-      "count": 6313,
+      "amount": 272271.1,
+      "count": 6314,
       "share": 96.2
     },
     {
@@ -531,7 +531,7 @@
     },
     {
       "date": "2026-09-12",
-      "amount": 119.8,
+      "amount": 189.7,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": false,
@@ -553,39 +553,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 119.8,
-        "productCost": 71.88,
+        "revenue": 189.7,
+        "productCost": 113.82,
         "shippingCost": 0,
-        "grossProfit": 47.92,
+        "grossProfit": 75.88,
         "grossMargin": 40,
-        "capturedOrders": 2,
-        "expectedOrders": 2,
+        "capturedOrders": 3,
+        "expectedOrders": 3,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 135696.19,
-        "productCost": 81417.71,
+        "revenue": 135766.09,
+        "productCost": 81459.65,
         "shippingCost": 0,
-        "grossProfit": 54278.48,
+        "grossProfit": 54306.44,
         "grossMargin": 40,
-        "capturedOrders": 3203,
-        "expectedOrders": 3203,
+        "capturedOrders": 3204,
+        "expectedOrders": 3204,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 282888.69,
-        "productCost": 169733.21,
+        "revenue": 282958.59,
+        "productCost": 169775.15,
         "shippingCost": 0,
-        "grossProfit": 113155.48,
+        "grossProfit": 113183.44,
         "grossMargin": 40,
-        "capturedOrders": 6640,
-        "expectedOrders": 6640,
+        "capturedOrders": 6641,
+        "expectedOrders": 6641,
         "orderCoverage": 100,
         "costCoverage": 100
       }
