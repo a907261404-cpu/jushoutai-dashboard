@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-09-12T14:08:45.867Z",
+  "updatedAt": "2026-09-12T14:17:09.483Z",
   "today": "2026-09-12",
   "range7": "2026-09-06 ~ 2026-09-12",
   "range30": "2026-08-14 ~ 2026-09-12",
   "platforms": {
     "today": {
       "total": {
-        "amount": 3681.1,
-        "count": 79
+        "amount": 5268.2,
+        "count": 108
       },
       "byPlatform": {
         "douyin": {
-          "amount": 3515.5,
-          "count": 75
+          "amount": 5102.6,
+          "count": 104
         },
         "pinduoduo": {
           "amount": 165.6,
@@ -59,13 +59,13 @@
     },
     "d7": {
       "total": {
-        "amount": 139830.29,
-        "count": 3292
+        "amount": 141417.39,
+        "count": 3321
       },
       "byPlatform": {
         "douyin": {
-          "amount": 128404.4,
-          "count": 2949
+          "amount": 129991.5,
+          "count": 2978
         },
         "pinduoduo": {
           "amount": 11425.89,
@@ -111,13 +111,13 @@
     },
     "d30": {
       "total": {
-        "amount": 287022.79,
-        "count": 6729
+        "amount": 288609.89,
+        "count": 6758
       },
       "byPlatform": {
         "douyin": {
-          "amount": 275596.9,
-          "count": 6386
+          "amount": 277184,
+          "count": 6415
         },
         "pinduoduo": {
           "amount": 11425.89,
@@ -164,18 +164,18 @@
   },
   "stores": [
     {
+      "name": "焦糖",
+      "platform": "douyin",
+      "platformLabel": "抖店",
+      "amount": 2557.8,
+      "count": 62
+    },
+    {
       "name": "琪宝衣帽室",
       "platform": "douyin",
       "platformLabel": "抖店",
       "amount": 978.3,
       "count": 17
-    },
-    {
-      "name": "焦糖",
-      "platform": "douyin",
-      "platformLabel": "抖店",
-      "amount": 970.7,
-      "count": 33
     },
     {
       "name": "MY琪",
@@ -218,8 +218,8 @@
       "name": "焦糖",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 41226.8,
-      "count": 1041
+      "amount": 42813.9,
+      "count": 1070
     },
     {
       "name": "studio琪",
@@ -261,8 +261,8 @@
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 275596.9,
-      "count": 6386,
+      "amount": 277184,
+      "count": 6415,
       "share": 96
     },
     {
@@ -557,7 +557,7 @@
     },
     {
       "date": "2026-09-12",
-      "amount": 3681.1,
+      "amount": 5268.2,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": false,
@@ -579,39 +579,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 3681.1,
-        "productCost": 2208.66,
+        "revenue": 5268.2,
+        "productCost": 3160.92,
         "shippingCost": 0,
-        "grossProfit": 1472.44,
+        "grossProfit": 2107.28,
         "grossMargin": 40,
-        "capturedOrders": 79,
-        "expectedOrders": 79,
+        "capturedOrders": 108,
+        "expectedOrders": 108,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 139830.29,
-        "productCost": 83898.17,
+        "revenue": 141417.39,
+        "productCost": 84850.43,
         "shippingCost": 0,
-        "grossProfit": 55932.12,
+        "grossProfit": 56566.96,
         "grossMargin": 40,
-        "capturedOrders": 3292,
-        "expectedOrders": 3292,
+        "capturedOrders": 3321,
+        "expectedOrders": 3321,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 287022.79,
-        "productCost": 172213.67,
+        "revenue": 288609.89,
+        "productCost": 173165.93,
         "shippingCost": 0,
-        "grossProfit": 114809.12,
+        "grossProfit": 115443.96,
         "grossMargin": 40,
-        "capturedOrders": 6729,
-        "expectedOrders": 6729,
+        "capturedOrders": 6758,
+        "expectedOrders": 6758,
         "orderCoverage": 100,
         "costCoverage": 100
       }
