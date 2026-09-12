@@ -1,14 +1,14 @@
 {
   "error": null,
-  "updatedAt": "2026-09-12T13:05:21.422Z",
+  "updatedAt": "2026-09-12T13:15:37.750Z",
   "today": "2026-09-12",
   "range7": "2026-09-06 ~ 2026-09-12",
   "range30": "2026-08-14 ~ 2026-09-12",
   "platforms": {
     "today": {
       "total": {
-        "amount": 2285.2,
-        "count": 38
+        "amount": 2450.8,
+        "count": 42
       },
       "byPlatform": {
         "douyin": {
@@ -16,8 +16,8 @@
           "count": 38
         },
         "pinduoduo": {
-          "amount": 0,
-          "count": 0
+          "amount": 165.6,
+          "count": 4
         },
         "taobao": {
           "amount": 0,
@@ -26,14 +26,14 @@
       },
       "coverage": {
         "expected": 8,
-        "captured": 5,
+        "captured": 6,
         "complete": false,
-        "percentage": 62.5
+        "percentage": 75
       },
       "prev": {
         "total": {
-          "amount": 0,
-          "count": 0
+          "amount": 572.8,
+          "count": 12
         },
         "byPlatform": {
           "douyin": {
@@ -41,8 +41,8 @@
             "count": 0
           },
           "pinduoduo": {
-            "amount": 0,
-            "count": 0
+            "amount": 572.8,
+            "count": 12
           },
           "taobao": {
             "amount": 0,
@@ -51,16 +51,16 @@
         },
         "coverage": {
           "expected": 8,
-          "captured": 0,
+          "captured": 1,
           "complete": false,
-          "percentage": 0
+          "percentage": 12.5
         }
       }
     },
     "d7": {
       "total": {
-        "amount": 137861.59,
-        "count": 3239
+        "amount": 138599.99,
+        "count": 3255
       },
       "byPlatform": {
         "douyin": {
@@ -68,8 +68,8 @@
           "count": 2912
         },
         "pinduoduo": {
-          "amount": 10687.49,
-          "count": 327
+          "amount": 11425.89,
+          "count": 343
         },
         "taobao": {
           "amount": 0,
@@ -78,9 +78,9 @@
       },
       "coverage": {
         "expected": 56,
-        "captured": 39,
+        "captured": 41,
         "complete": false,
-        "percentage": 69.6
+        "percentage": 73.2
       },
       "prev": {
         "total": {
@@ -111,8 +111,8 @@
     },
     "d30": {
       "total": {
-        "amount": 285054.09,
-        "count": 6676
+        "amount": 285792.49,
+        "count": 6692
       },
       "byPlatform": {
         "douyin": {
@@ -120,8 +120,8 @@
           "count": 6349
         },
         "pinduoduo": {
-          "amount": 10687.49,
-          "count": 327
+          "amount": 11425.89,
+          "count": 343
         },
         "taobao": {
           "amount": 0,
@@ -130,9 +130,9 @@
       },
       "coverage": {
         "expected": 240,
-        "captured": 98,
+        "captured": 100,
         "complete": false,
-        "percentage": 40.8
+        "percentage": 41.7
       },
       "prev": {
         "total": {
@@ -185,6 +185,13 @@
       "count": 7
     },
     {
+      "name": "糖醋排骨琪",
+      "platform": "pinduoduo",
+      "platformLabel": "拼多多",
+      "amount": 165.6,
+      "count": 4
+    },
+    {
       "name": "studio琪",
       "platform": "douyin",
       "platformLabel": "抖店",
@@ -232,8 +239,8 @@
       "name": "糖醋排骨琪",
       "platform": "pinduoduo",
       "platformLabel": "拼多多",
-      "amount": 10292.59,
-      "count": 320
+      "amount": 11030.99,
+      "count": 336
     },
     {
       "name": "3号店",
@@ -256,14 +263,14 @@
       "label": "抖店",
       "amount": 274366.6,
       "count": 6349,
-      "share": 96.3
+      "share": 96
     },
     {
       "platform": "pinduoduo",
       "label": "拼多多",
-      "amount": 10687.49,
-      "count": 327,
-      "share": 3.7
+      "amount": 11425.89,
+      "count": 343,
+      "share": 4
     }
   ],
   "highlight": {},
@@ -522,20 +529,20 @@
     },
     {
       "date": "2026-09-11",
-      "amount": 0,
+      "amount": 572.8,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": false,
-      "capturedStores": 0,
+      "capturedStores": 1,
       "expectedStores": 8
     },
     {
       "date": "2026-09-12",
-      "amount": 2285.2,
+      "amount": 2450.8,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": false,
-      "capturedStores": 5,
+      "capturedStores": 6,
       "expectedStores": 8
     }
   ],
@@ -543,8 +550,8 @@
     "start": "2026-08-14",
     "end": "2026-09-12",
     "complete": false,
-    "coverage": 40.8,
-    "capturedStoreDays": 98,
+    "coverage": 41.7,
+    "capturedStoreDays": 100,
     "expectedStoreDays": 240,
     "syncedAt": "2026-09-12T12:04:49.997Z"
   },
@@ -553,39 +560,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 2285.2,
-        "productCost": 1371.12,
+        "revenue": 2450.8,
+        "productCost": 1470.48,
         "shippingCost": 0,
-        "grossProfit": 914.08,
+        "grossProfit": 980.32,
         "grossMargin": 40,
-        "capturedOrders": 38,
-        "expectedOrders": 38,
+        "capturedOrders": 42,
+        "expectedOrders": 42,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 137861.59,
-        "productCost": 82716.95,
+        "revenue": 138599.99,
+        "productCost": 83159.99,
         "shippingCost": 0,
-        "grossProfit": 55144.64,
+        "grossProfit": 55440,
         "grossMargin": 40,
-        "capturedOrders": 3239,
-        "expectedOrders": 3239,
+        "capturedOrders": 3255,
+        "expectedOrders": 3255,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 285054.09,
-        "productCost": 171032.45,
+        "revenue": 285792.49,
+        "productCost": 171475.49,
         "shippingCost": 0,
-        "grossProfit": 114021.64,
+        "grossProfit": 114317,
         "grossMargin": 40,
-        "capturedOrders": 6676,
-        "expectedOrders": 6676,
+        "capturedOrders": 6692,
+        "expectedOrders": 6692,
         "orderCoverage": 100,
         "costCoverage": 100
       }
