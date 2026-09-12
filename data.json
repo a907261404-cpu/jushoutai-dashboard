@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-09-12T22:32:21.383Z",
+  "updatedAt": "2026-09-12T22:52:21.818Z",
   "today": "2026-09-13",
   "range7": "2026-09-07 ~ 2026-09-13",
   "range30": "2026-08-15 ~ 2026-09-13",
   "platforms": {
     "today": {
       "total": {
-        "amount": 3878.2,
-        "count": 78
+        "amount": 3918.1,
+        "count": 79
       },
       "byPlatform": {
         "douyin": {
-          "amount": 3828.3,
-          "count": 77
+          "amount": 3868.2,
+          "count": 78
         },
         "pinduoduo": {
           "amount": 49.9,
@@ -59,13 +59,13 @@
     },
     "d7": {
       "total": {
-        "amount": 123798.76,
-        "count": 2791
+        "amount": 123838.66,
+        "count": 2792
       },
       "byPlatform": {
         "douyin": {
-          "amount": 115285.4,
-          "count": 2544
+          "amount": 115325.3,
+          "count": 2545
         },
         "pinduoduo": {
           "amount": 8513.36,
@@ -111,13 +111,13 @@
     },
     "d30": {
       "total": {
-        "amount": 301218.59,
-        "count": 7028
+        "amount": 301258.49,
+        "count": 7029
       },
       "byPlatform": {
         "douyin": {
-          "amount": 289742.8,
-          "count": 6684
+          "amount": 289782.7,
+          "count": 6685
         },
         "pinduoduo": {
           "amount": 11475.79,
@@ -171,17 +171,17 @@
       "count": 67
     },
     {
+      "name": "MY琪",
+      "platform": "douyin",
+      "platformLabel": "抖店",
+      "amount": 339.4,
+      "count": 6
+    },
+    {
       "name": "琪宝衣帽室",
       "platform": "douyin",
       "platformLabel": "抖店",
       "amount": 319.5,
-      "count": 5
-    },
-    {
-      "name": "MY琪",
-      "platform": "douyin",
-      "platformLabel": "抖店",
-      "amount": 299.5,
       "count": 5
     },
     {
@@ -225,8 +225,8 @@
       "name": "MY琪",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 16171.6,
-      "count": 283
+      "amount": 16211.5,
+      "count": 284
     },
     {
       "name": "studio琪",
@@ -261,8 +261,8 @@
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 289742.8,
-      "count": 6684,
+      "amount": 289782.7,
+      "count": 6685,
       "share": 96.2
     },
     {
@@ -557,7 +557,7 @@
     },
     {
       "date": "2026-09-13",
-      "amount": 3878.2,
+      "amount": 3918.1,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": false,
@@ -579,39 +579,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 3878.2,
-        "productCost": 2326.92,
+        "revenue": 3918.1,
+        "productCost": 2350.86,
         "shippingCost": 0,
-        "grossProfit": 1551.28,
+        "grossProfit": 1567.24,
         "grossMargin": 40,
-        "capturedOrders": 78,
-        "expectedOrders": 78,
+        "capturedOrders": 79,
+        "expectedOrders": 79,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 123798.76,
-        "productCost": 74279.26,
+        "revenue": 123838.66,
+        "productCost": 74303.2,
         "shippingCost": 0,
-        "grossProfit": 49519.5,
+        "grossProfit": 49535.46,
         "grossMargin": 40,
-        "capturedOrders": 2791,
-        "expectedOrders": 2791,
+        "capturedOrders": 2792,
+        "expectedOrders": 2792,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 301218.59,
-        "productCost": 180731.15,
+        "revenue": 301258.49,
+        "productCost": 180755.09,
         "shippingCost": 0,
-        "grossProfit": 120487.44,
+        "grossProfit": 120503.4,
         "grossMargin": 40,
-        "capturedOrders": 7028,
-        "expectedOrders": 7028,
+        "capturedOrders": 7029,
+        "expectedOrders": 7029,
         "orderCoverage": 100,
         "costCoverage": 100
       }
