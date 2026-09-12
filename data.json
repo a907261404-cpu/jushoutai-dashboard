@@ -1,6 +1,6 @@
 {
   "error": null,
-  "updatedAt": "2026-09-12T21:21:27.860Z",
+  "updatedAt": "2026-09-12T21:59:43.194Z",
   "today": "2026-09-13",
   "range7": "2026-09-07 ~ 2026-09-13",
   "range30": "2026-08-15 ~ 2026-09-13",
@@ -572,7 +572,7 @@
     "coverage": 49.5,
     "capturedStoreDays": 104,
     "expectedStoreDays": 210,
-    "syncedAt": "2026-09-12T21:36:39.483Z"
+    "syncedAt": "2026-09-12T22:00:15.784Z"
   },
   "profit": {
     "ranges": {
