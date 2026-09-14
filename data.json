@@ -1,6 +1,6 @@
 {
   "error": null,
-  "updatedAt": "2026-09-14T20:36:02.634Z",
+  "updatedAt": "2026-09-14T20:56:00.662Z",
   "today": "2026-09-15",
   "range7": "2026-09-09 ~ 2026-09-15",
   "range30": "2026-08-17 ~ 2026-09-15",
@@ -32,8 +32,8 @@
       },
       "prev": {
         "total": {
-          "amount": 3097.91,
-          "count": 56
+          "amount": 3197.71,
+          "count": 58
         },
         "byPlatform": {
           "douyin": {
@@ -41,8 +41,8 @@
             "count": 46
           },
           "pinduoduo": {
-            "amount": 596.51,
-            "count": 10
+            "amount": 696.31,
+            "count": 12
           },
           "taobao": {
             "amount": 0,
@@ -59,8 +59,8 @@
     },
     "d7": {
       "total": {
-        "amount": 111434.56,
-        "count": 2411
+        "amount": 111534.36,
+        "count": 2413
       },
       "byPlatform": {
         "douyin": {
@@ -68,8 +68,8 @@
           "count": 2283
         },
         "pinduoduo": {
-          "amount": 4803.06,
-          "count": 128
+          "amount": 4902.86,
+          "count": 130
         },
         "taobao": {
           "amount": 0,
@@ -111,8 +111,8 @@
     },
     "d30": {
       "total": {
-        "amount": 324475.12,
-        "count": 7482
+        "amount": 324574.92,
+        "count": 7484
       },
       "byPlatform": {
         "douyin": {
@@ -120,8 +120,8 @@
           "count": 7120
         },
         "pinduoduo": {
-          "amount": 12481,
-          "count": 362
+          "amount": 12580.8,
+          "count": 364
         },
         "taobao": {
           "amount": 0,
@@ -260,8 +260,8 @@
       "name": "辣辣家服饰",
       "platform": "pinduoduo",
       "platformLabel": "拼多多",
-      "amount": 677.71,
-      "count": 12
+      "amount": 777.51,
+      "count": 14
     }
   ],
   "platformShare": [
@@ -270,14 +270,14 @@
       "label": "抖店",
       "amount": 311994.12,
       "count": 7120,
-      "share": 96.2
+      "share": 96.1
     },
     {
       "platform": "pinduoduo",
       "label": "拼多多",
-      "amount": 12481,
-      "count": 362,
-      "share": 3.8
+      "amount": 12580.8,
+      "count": 364,
+      "share": 3.9
     }
   ],
   "highlight": {},
@@ -536,7 +536,7 @@
     },
     {
       "date": "2026-09-14",
-      "amount": 3097.91,
+      "amount": 3197.71,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": false,
@@ -580,26 +580,26 @@
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 111434.56,
-        "productCost": 66860.74,
+        "revenue": 111534.36,
+        "productCost": 66920.62,
         "shippingCost": 0,
-        "grossProfit": 44573.82,
+        "grossProfit": 44613.74,
         "grossMargin": 40,
-        "capturedOrders": 2411,
-        "expectedOrders": 2411,
+        "capturedOrders": 2413,
+        "expectedOrders": 2413,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 324475.12,
-        "productCost": 194685.07,
+        "revenue": 324574.92,
+        "productCost": 194744.95,
         "shippingCost": 0,
-        "grossProfit": 129790.05,
+        "grossProfit": 129829.97,
         "grossMargin": 40,
-        "capturedOrders": 7482,
-        "expectedOrders": 7482,
+        "capturedOrders": 7484,
+        "expectedOrders": 7484,
         "orderCoverage": 100,
         "costCoverage": 100
       }
