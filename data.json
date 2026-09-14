@@ -1,14 +1,14 @@
 {
   "error": null,
-  "updatedAt": "2026-09-14T17:26:08.706Z",
+  "updatedAt": "2026-09-14T17:36:07.048Z",
   "today": "2026-09-15",
   "range7": "2026-09-09 ~ 2026-09-15",
   "range30": "2026-08-17 ~ 2026-09-15",
   "platforms": {
     "today": {
       "total": {
-        "amount": 209.7,
-        "count": 3
+        "amount": 255.5,
+        "count": 4
       },
       "byPlatform": {
         "douyin": {
@@ -16,8 +16,8 @@
           "count": 3
         },
         "pinduoduo": {
-          "amount": 0,
-          "count": 0
+          "amount": 45.8,
+          "count": 1
         },
         "taobao": {
           "amount": 0,
@@ -59,8 +59,8 @@
     },
     "d7": {
       "total": {
-        "amount": 111238.96,
-        "count": 2408
+        "amount": 111284.76,
+        "count": 2409
       },
       "byPlatform": {
         "douyin": {
@@ -68,8 +68,8 @@
           "count": 2281
         },
         "pinduoduo": {
-          "amount": 4757.26,
-          "count": 127
+          "amount": 4803.06,
+          "count": 128
         },
         "taobao": {
           "amount": 0,
@@ -111,8 +111,8 @@
     },
     "d30": {
       "total": {
-        "amount": 324279.52,
-        "count": 7479
+        "amount": 324325.32,
+        "count": 7480
       },
       "byPlatform": {
         "douyin": {
@@ -120,8 +120,8 @@
           "count": 7118
         },
         "pinduoduo": {
-          "amount": 12435.2,
-          "count": 361
+          "amount": 12481,
+          "count": 362
         },
         "taobao": {
           "amount": 0,
@@ -178,6 +178,13 @@
       "count": 1
     },
     {
+      "name": "糖醋排骨琪",
+      "platform": "pinduoduo",
+      "platformLabel": "拼多多",
+      "amount": 45.8,
+      "count": 1
+    },
+    {
       "name": "studio琪",
       "platform": "douyin",
       "platformLabel": "抖店",
@@ -200,13 +207,6 @@
     },
     {
       "name": "辣辣家服饰",
-      "platform": "pinduoduo",
-      "platformLabel": "拼多多",
-      "amount": 0,
-      "count": 0
-    },
-    {
-      "name": "糖醋排骨琪",
       "platform": "pinduoduo",
       "platformLabel": "拼多多",
       "amount": 0,
@@ -239,8 +239,8 @@
       "name": "糖醋排骨琪",
       "platform": "pinduoduo",
       "platformLabel": "拼多多",
-      "amount": 11757.49,
-      "count": 349
+      "amount": 11803.29,
+      "count": 350
     },
     {
       "name": "studio琪",
@@ -275,8 +275,8 @@
     {
       "platform": "pinduoduo",
       "label": "拼多多",
-      "amount": 12435.2,
-      "count": 361,
+      "amount": 12481,
+      "count": 362,
       "share": 3.8
     }
   ],
@@ -545,7 +545,7 @@
     },
     {
       "date": "2026-09-15",
-      "amount": 209.7,
+      "amount": 255.5,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": false,
@@ -567,39 +567,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 209.7,
-        "productCost": 125.82,
+        "revenue": 255.5,
+        "productCost": 153.3,
         "shippingCost": 0,
-        "grossProfit": 83.88,
+        "grossProfit": 102.2,
         "grossMargin": 40,
-        "capturedOrders": 3,
-        "expectedOrders": 3,
+        "capturedOrders": 4,
+        "expectedOrders": 4,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 111238.96,
-        "productCost": 66743.38,
+        "revenue": 111284.76,
+        "productCost": 66770.86,
         "shippingCost": 0,
-        "grossProfit": 44495.58,
+        "grossProfit": 44513.9,
         "grossMargin": 40,
-        "capturedOrders": 2408,
-        "expectedOrders": 2408,
+        "capturedOrders": 2409,
+        "expectedOrders": 2409,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 324279.52,
-        "productCost": 194567.71,
+        "revenue": 324325.32,
+        "productCost": 194595.19,
         "shippingCost": 0,
-        "grossProfit": 129711.81,
+        "grossProfit": 129730.13,
         "grossMargin": 40,
-        "capturedOrders": 7479,
-        "expectedOrders": 7479,
+        "capturedOrders": 7480,
+        "expectedOrders": 7480,
         "orderCoverage": 100,
         "costCoverage": 100
       }
