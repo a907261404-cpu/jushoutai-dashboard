@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-09-16T18:59:40.138Z",
+  "updatedAt": "2026-09-17T00:59:39.026Z",
   "today": "2026-09-17",
   "range7": "2026-09-11 ~ 2026-09-17",
   "range30": "2026-08-19 ~ 2026-09-17",
   "platforms": {
     "today": {
       "total": {
-        "amount": 309.4,
-        "count": 6
+        "amount": 658.7,
+        "count": 13
       },
       "byPlatform": {
         "douyin": {
-          "amount": 309.4,
-          "count": 6
+          "amount": 658.7,
+          "count": 13
         },
         "pinduoduo": {
           "amount": 0,
@@ -59,13 +59,13 @@
     },
     "d7": {
       "total": {
-        "amount": 103524.61,
-        "count": 2271
+        "amount": 103873.91,
+        "count": 2278
       },
       "byPlatform": {
         "douyin": {
-          "amount": 101345.8,
-          "count": 2229
+          "amount": 101695.1,
+          "count": 2236
         },
         "pinduoduo": {
           "amount": 2178.81,
@@ -111,13 +111,13 @@
     },
     "d30": {
       "total": {
-        "amount": 346844.22,
-        "count": 7884
+        "amount": 347193.52,
+        "count": 7891
       },
       "byPlatform": {
         "douyin": {
-          "amount": 333977.92,
-          "count": 7515
+          "amount": 334327.22,
+          "count": 7522
         },
         "pinduoduo": {
           "amount": 12866.3,
@@ -167,21 +167,21 @@
       "name": "琪宝衣帽室",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 159.6,
-      "count": 4
+      "amount": 449,
+      "count": 10
+    },
+    {
+      "name": "MY琪",
+      "platform": "douyin",
+      "platformLabel": "抖店",
+      "amount": 129.8,
+      "count": 2
     },
     {
       "name": "3号店",
       "platform": "douyin",
       "platformLabel": "抖店",
       "amount": 79.9,
-      "count": 1
-    },
-    {
-      "name": "MY琪",
-      "platform": "douyin",
-      "platformLabel": "抖店",
-      "amount": 69.9,
       "count": 1
     },
     {
@@ -204,8 +204,8 @@
       "name": "琪宝衣帽室",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 240606.12,
-      "count": 5553
+      "amount": 240895.52,
+      "count": 5559
     },
     {
       "name": "焦糖",
@@ -218,8 +218,8 @@
       "name": "MY琪",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 18591.5,
-      "count": 324
+      "amount": 18651.4,
+      "count": 325
     },
     {
       "name": "糖醋排骨琪",
@@ -254,8 +254,8 @@
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 333977.92,
-      "count": 7515,
+      "amount": 334327.22,
+      "count": 7522,
       "share": 96.3
     },
     {
@@ -531,7 +531,7 @@
     },
     {
       "date": "2026-09-17",
-      "amount": 309.4,
+      "amount": 658.7,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": false,
@@ -553,39 +553,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 309.4,
-        "productCost": 185.64,
+        "revenue": 658.7,
+        "productCost": 395.22,
         "shippingCost": 0,
-        "grossProfit": 123.76,
+        "grossProfit": 263.48,
         "grossMargin": 40,
-        "capturedOrders": 6,
-        "expectedOrders": 6,
+        "capturedOrders": 13,
+        "expectedOrders": 13,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 103524.61,
-        "productCost": 62114.77,
+        "revenue": 103873.91,
+        "productCost": 62324.35,
         "shippingCost": 0,
-        "grossProfit": 41409.84,
+        "grossProfit": 41549.56,
         "grossMargin": 40,
-        "capturedOrders": 2271,
-        "expectedOrders": 2271,
+        "capturedOrders": 2278,
+        "expectedOrders": 2278,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 346844.22,
-        "productCost": 208106.53,
+        "revenue": 347193.52,
+        "productCost": 208316.11,
         "shippingCost": 0,
-        "grossProfit": 138737.69,
+        "grossProfit": 138877.41,
         "grossMargin": 40,
-        "capturedOrders": 7884,
-        "expectedOrders": 7884,
+        "capturedOrders": 7891,
+        "expectedOrders": 7891,
         "orderCoverage": 100,
         "costCoverage": 100
       }
