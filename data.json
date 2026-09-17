@@ -25,10 +25,10 @@
         }
       },
       "coverage": {
-        "expected": 8,
+        "expected": 5,
         "captured": 5,
-        "complete": false,
-        "percentage": 62.5
+        "complete": true,
+        "percentage": 100
       },
       "prev": {
         "total": {
@@ -50,10 +50,10 @@
           }
         },
         "coverage": {
-          "expected": 8,
+          "expected": 5,
           "captured": 5,
-          "complete": false,
-          "percentage": 62.5
+          "complete": true,
+          "percentage": 100
         }
       }
     },
@@ -77,10 +77,10 @@
         }
       },
       "coverage": {
-        "expected": 56,
+        "expected": 35,
         "captured": 35,
-        "complete": false,
-        "percentage": 62.5
+        "complete": true,
+        "percentage": 100
       },
       "prev": {
         "total": {
@@ -102,10 +102,10 @@
           }
         },
         "coverage": {
-          "expected": 56,
+          "expected": 35,
           "captured": 28,
           "complete": false,
-          "percentage": 50
+          "percentage": 80
         }
       }
     },
@@ -129,10 +129,10 @@
         }
       },
       "coverage": {
-        "expected": 240,
+        "expected": 150,
         "captured": 106,
         "complete": false,
-        "percentage": 44.2
+        "percentage": 70.7
       },
       "prev": {
         "total": {
@@ -154,10 +154,10 @@
           }
         },
         "coverage": {
-          "expected": 240,
+          "expected": 150,
           "captured": 60,
           "complete": false,
-          "percentage": 25
+          "percentage": 40
         }
       }
     }
@@ -245,7 +245,26 @@
       "share": 100
     }
   ],
-  "highlight": {},
+  "highlight": {
+    "best": {
+      "date": "2026-09-13",
+      "amount": 34634.9,
+      "estimateAmount": 0,
+      "isEstimate": false,
+      "complete": true,
+      "capturedStores": 5,
+      "expectedStores": 5
+    },
+    "worst": {
+      "date": "2026-09-18",
+      "amount": 399.4,
+      "estimateAmount": 0,
+      "isEstimate": false,
+      "complete": true,
+      "capturedStores": 5,
+      "expectedStores": 5
+    }
+  },
   "daily": [
     {
       "date": "2026-08-20",
@@ -254,7 +273,7 @@
       "isEstimate": false,
       "complete": false,
       "capturedStores": 2,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-08-21",
@@ -263,7 +282,7 @@
       "isEstimate": false,
       "complete": false,
       "capturedStores": 2,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-08-22",
@@ -272,7 +291,7 @@
       "isEstimate": false,
       "complete": false,
       "capturedStores": 2,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-08-23",
@@ -281,7 +300,7 @@
       "isEstimate": false,
       "complete": false,
       "capturedStores": 2,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-08-24",
@@ -290,7 +309,7 @@
       "isEstimate": false,
       "complete": false,
       "capturedStores": 2,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-08-25",
@@ -299,7 +318,7 @@
       "isEstimate": false,
       "complete": false,
       "capturedStores": 2,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-08-26",
@@ -308,7 +327,7 @@
       "isEstimate": false,
       "complete": false,
       "capturedStores": 2,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-08-27",
@@ -317,7 +336,7 @@
       "isEstimate": false,
       "complete": false,
       "capturedStores": 3,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-08-28",
@@ -326,7 +345,7 @@
       "isEstimate": false,
       "complete": false,
       "capturedStores": 3,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-08-29",
@@ -335,25 +354,25 @@
       "isEstimate": false,
       "complete": false,
       "capturedStores": 3,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-08-30",
       "amount": 5237.2,
       "estimateAmount": 0,
       "isEstimate": false,
-      "complete": false,
+      "complete": true,
       "capturedStores": 5,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-08-31",
       "amount": 856.6,
       "estimateAmount": 0,
       "isEstimate": false,
-      "complete": false,
+      "complete": true,
       "capturedStores": 5,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-09-01",
@@ -362,25 +381,25 @@
       "isEstimate": false,
       "complete": false,
       "capturedStores": 0,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-09-02",
       "amount": 18721.5,
       "estimateAmount": 0,
       "isEstimate": false,
-      "complete": false,
+      "complete": true,
       "capturedStores": 5,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-09-03",
       "amount": 4776.5,
       "estimateAmount": 0,
       "isEstimate": false,
-      "complete": false,
+      "complete": true,
       "capturedStores": 5,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-09-04",
@@ -389,7 +408,7 @@
       "isEstimate": false,
       "complete": false,
       "capturedStores": 0,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-09-05",
@@ -398,7 +417,7 @@
       "isEstimate": false,
       "complete": false,
       "capturedStores": 4,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-09-06",
@@ -407,43 +426,43 @@
       "isEstimate": false,
       "complete": false,
       "capturedStores": 4,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-09-07",
       "amount": 15984.1,
       "estimateAmount": 0,
       "isEstimate": false,
-      "complete": false,
+      "complete": true,
       "capturedStores": 5,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-09-08",
       "amount": 26337.3,
       "estimateAmount": 0,
       "isEstimate": false,
-      "complete": false,
+      "complete": true,
       "capturedStores": 5,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-09-09",
       "amount": 26023,
       "estimateAmount": 0,
       "isEstimate": false,
-      "complete": false,
+      "complete": true,
       "capturedStores": 5,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-09-10",
       "amount": 23548.7,
       "estimateAmount": 0,
       "isEstimate": false,
-      "complete": false,
+      "complete": true,
       "capturedStores": 5,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-09-11",
@@ -452,80 +471,80 @@
       "isEstimate": false,
       "complete": false,
       "capturedStores": 0,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-09-12",
       "amount": 19564,
       "estimateAmount": 0,
       "isEstimate": false,
-      "complete": false,
+      "complete": true,
       "capturedStores": 5,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-09-13",
       "amount": 34634.9,
       "estimateAmount": 0,
       "isEstimate": false,
-      "complete": false,
+      "complete": true,
       "capturedStores": 5,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-09-14",
       "amount": 2501.4,
       "estimateAmount": 0,
       "isEstimate": false,
-      "complete": false,
+      "complete": true,
       "capturedStores": 5,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-09-15",
       "amount": 16537.6,
       "estimateAmount": 0,
       "isEstimate": false,
-      "complete": false,
+      "complete": true,
       "capturedStores": 5,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-09-16",
       "amount": 27798.5,
       "estimateAmount": 0,
       "isEstimate": false,
-      "complete": false,
+      "complete": true,
       "capturedStores": 5,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-09-17",
       "amount": 2956.8,
       "estimateAmount": 0,
       "isEstimate": false,
-      "complete": false,
+      "complete": true,
       "capturedStores": 5,
-      "expectedStores": 8
+      "expectedStores": 5
     },
     {
       "date": "2026-09-18",
       "amount": 399.4,
       "estimateAmount": 0,
       "isEstimate": false,
-      "complete": false,
+      "complete": true,
       "capturedStores": 5,
-      "expectedStores": 8
+      "expectedStores": 5
     }
   ],
   "salesHistory": {
     "start": "2026-08-20",
     "end": "2026-09-18",
     "complete": false,
-    "coverage": 44.2,
+    "coverage": 70.7,
     "capturedStoreDays": 106,
-    "expectedStoreDays": 240,
-    "syncedAt": "2026-09-17T16:51:03.858Z"
+    "expectedStoreDays": 150,
+    "syncedAt": "2026-09-17T22:53:03.928Z"
   },
   "profit": {
     "ranges": {
