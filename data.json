@@ -1,19 +1,19 @@
 {
   "error": null,
-  "updatedAt": "2026-10-13T16:00:20.213Z",
+  "updatedAt": "2026-10-13T21:20:35.039Z",
   "today": "2026-10-14",
   "range7": "2026-10-08 ~ 2026-10-14",
   "range30": "2026-09-15 ~ 2026-10-14",
   "platforms": {
     "today": {
       "total": {
-        "amount": 89.9,
-        "count": 1
+        "amount": 105.8,
+        "count": 2
       },
       "byPlatform": {
         "douyin": {
-          "amount": 89.9,
-          "count": 1
+          "amount": 105.8,
+          "count": 2
         },
         "pinduoduo": {
           "amount": 0,
@@ -59,13 +59,13 @@
     },
     "d7": {
       "total": {
-        "amount": 17829.9,
-        "count": 320
+        "amount": 17845.8,
+        "count": 321
       },
       "byPlatform": {
         "douyin": {
-          "amount": 17829.9,
-          "count": 320
+          "amount": 17845.8,
+          "count": 321
         },
         "pinduoduo": {
           "amount": 0,
@@ -111,13 +111,13 @@
     },
     "d30": {
       "total": {
-        "amount": 320471.3,
-        "count": 7173
+        "amount": 320487.2,
+        "count": 7174
       },
       "byPlatform": {
         "douyin": {
-          "amount": 319936.3,
-          "count": 7162
+          "amount": 319952.2,
+          "count": 7163
         },
         "pinduoduo": {
           "amount": 535,
@@ -164,14 +164,14 @@
   },
   "stores": [
     {
-      "name": "3号店",
+      "name": "MY",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 89.9,
-      "count": 1
+      "amount": 105.8,
+      "count": 2
     },
     {
-      "name": "MY",
+      "name": "3号店",
       "platform": "douyin",
       "platformLabel": "抖店",
       "amount": 0,
@@ -204,15 +204,15 @@
       "name": "MY",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 17052.3,
-      "count": 283
+      "amount": 17158.1,
+      "count": 285
     },
     {
       "name": "3号店",
       "platform": "douyin",
       "platformLabel": "抖店",
-      "amount": 7180.3,
-      "count": 95
+      "amount": 7090.4,
+      "count": 94
     },
     {
       "name": "辣",
@@ -226,8 +226,8 @@
     {
       "platform": "douyin",
       "label": "抖店",
-      "amount": 319936.3,
-      "count": 7162,
+      "amount": 319952.2,
+      "count": 7163,
       "share": 99.8
     },
     {
@@ -503,7 +503,7 @@
     },
     {
       "date": "2026-10-14",
-      "amount": 89.9,
+      "amount": 105.8,
       "estimateAmount": 0,
       "isEstimate": false,
       "complete": false,
@@ -525,39 +525,39 @@
       "today": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 89.9,
-        "productCost": 53.94,
+        "revenue": 105.8,
+        "productCost": 63.48,
         "shippingCost": 0,
-        "grossProfit": 35.96,
+        "grossProfit": 42.32,
         "grossMargin": 40,
-        "capturedOrders": 1,
-        "expectedOrders": 1,
+        "capturedOrders": 2,
+        "expectedOrders": 2,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d7": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 17829.9,
-        "productCost": 10697.94,
+        "revenue": 17845.8,
+        "productCost": 10707.48,
         "shippingCost": 0,
-        "grossProfit": 7131.96,
+        "grossProfit": 7138.32,
         "grossMargin": 40,
-        "capturedOrders": 320,
-        "expectedOrders": 320,
+        "capturedOrders": 321,
+        "expectedOrders": 321,
         "orderCoverage": 100,
         "costCoverage": 100
       },
       "d30": {
         "status": "exact",
         "basis": "flat_60",
-        "revenue": 320471.3,
-        "productCost": 192282.78,
+        "revenue": 320487.2,
+        "productCost": 192292.32,
         "shippingCost": 0,
-        "grossProfit": 128188.52,
+        "grossProfit": 128194.88,
         "grossMargin": 40,
-        "capturedOrders": 7173,
-        "expectedOrders": 7173,
+        "capturedOrders": 7174,
+        "expectedOrders": 7174,
         "orderCoverage": 100,
         "costCoverage": 100
       }
